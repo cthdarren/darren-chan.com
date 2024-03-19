@@ -35,7 +35,7 @@ function App() {
             <p className='display-3 mb-0'>hi, i'm darren.</p>
 
             <p className='small'>i love creating things, and software is my outlet.</p>
-            <a href="https://quagsirecdn.sgp1.cdn.digitaloceanspaces.com/Resume%20Darren.pdf" className='btn btn-outline-primary me-2'>my resume here.</a>
+            <a target="_blank" href="https://quagsirecdn.sgp1.cdn.digitaloceanspaces.com/Resume%20Darren.pdf" className='btn btn-outline-primary me-2'>my resume here.</a>
             {/* <p className='btn btn-outline-primary ms-2'>my projects here.</p> */}
 
             <p className='h4 mt-4'>a little bit about myself.</p>
