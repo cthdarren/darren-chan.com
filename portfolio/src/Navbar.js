@@ -22,9 +22,9 @@ function NavBar() {
                             <img width="30" height="30" src="https://raw.githubusercontent.com/rdimascio/icons/master/icons/dark/linkedin.svg"/>
 
                         </Nav.Link>
-                        <Nav.Link>
+                        {/* <Nav.Link>
                             Darkmode
-                        </Nav.Link>
+                        </Nav.Link> */}
                         <p></p>
                     </Nav>
                 </Navbar.Collapse>
