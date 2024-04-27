@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import LandingButton from "./LandingButton";
 
 function App() {
     return (
@@ -13,9 +14,9 @@ function App() {
                         a minimalist, with a love for software
                     </div>
                 <div id="links" className="flex mt-10">
-                    <button type="button" className="mr-8 text-lg border-black border rounded-md py-2 px-8">Projects</button>
-                    <button type="button" className="mr-8 text-lg border-black border rounded-md py-2 px-8">Github</button>
-                    <button type="button" className="mr-8 text-lg border-black border rounded-md py-2 px-8">LinkedIn</button>
+                        <LandingButton link="https://github.com/cthdarren" name="Résumé"/>
+                        <LandingButton link="https://github.com/cthdarren" name="Projects"/>
+                        <LandingButton link="https://github.com/cthdarren" name="Github"/>
                 </div>
                 </div>
             </div>
