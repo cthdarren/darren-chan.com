@@ -2,33 +2,38 @@ import logo from "./logo.svg";
 import "./App.css";
 import LandingButton from "./LandingButton";
 import WorkExpCard from "./WorkExpCard";
+import Home from "./Home";
 
 function App() {
     return (
         <div className="App ">
-            <div id="greeting" className="w-full h-screen flex">
-                <div id="infowrapper" className="flex flex-col my-auto items-start mx-5 md:mx-20 xl:mx-40 w-full">
-                    <div id="name" className="text-8xl mb-64 text-left">
-                        Darren Chan
-                    </div>
-                    <div id="subheader" className="text-md border-t-4 w-full text-left pt-5">
+                <div
+                    id="name"
+                    className="text-6xl text-left w-full absolute top-16 px-16 "
+                >
+                    <p className="border-t-2 pt-5 font-thin">Darren Chan</p>
+                <div id="links" className="flex mt-5 text-base flex-col">
+                    <p>Home</p>
+                    <p>Work Experience</p>
+                    <p>Projects</p>
+                    <p>Languages</p>
+                    <p>Education</p>
+                    <p>Contact</p>
+                </div>
+
+                </div>
+                <div
+                    id="subheader"
+                    className="text-md w-full text-left absolute bottom-5 px-16"
+                >
+                    <p className="border-t-2 py-3 text-sm">
                         a minimalist, with a love for software
-                    </div>
-                <div id="links" className="flex mt-10">
-                        <LandingButton link="https://github.com/cthdarren" name="Résumé"/>
-                        <LandingButton link="https://github.com/cthdarren" name="Projects"/>
-                        <LandingButton link="https://github.com/cthdarren" name="Github"/>
+                    </p>
                 </div>
-                </div>
+
+            <div id="currpage" className="w-full absolute top-16 bottom-16">
+                <Home/>
             </div>
-            <div id='workexperience'>
-                <WorkExpCard title={"CSIntelligence"} role={"Junior SOC Analyst"} description={"Helped the SOC team with daily threat hunting"} languages={"Python, JavaScript, React"}/>
-            </div>
-            <div id='projects'></div>
-            <div id='languages'></div>
-            <div id='education'></div>
-            <div id='contact'></div>
-            <div id='about'></div>
         </div>
     );
 }
