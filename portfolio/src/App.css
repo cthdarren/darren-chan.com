@@ -10,6 +10,35 @@
   height: 40vmin;
   pointer-events: none;
 }
+.selectednavbaritem::after {
+    content: '';
+    position: absolute;
+    padding-top:2px;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid black; /* Initial border style (transparent) */
+    transition: width 0.1s;
+}
+.navbaritem:hover::after{
+    width: 100%;
+}
+.navbaritem::after {
+    content: '';
+    position: absolute;
+    padding-top:2px;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 0;
+    border-bottom: 2px solid black; /* Initial border style (transparent) */
+    transition: width 0.1s;
+}
+
+.navbaritem:hover::after {
+    width:100%
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
