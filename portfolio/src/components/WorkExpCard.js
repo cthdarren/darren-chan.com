@@ -6,8 +6,8 @@ function WorkExpCard({ title, role, duration, description, languages }) {
                     <div className="text-bold text-xl sm:text-5xl">{title}</div>
                 </div>
                 <div className="">{role}</div>
-                <div className="pt-3">{description}</div>
-                <div className="pt-3">{languages}</div>
+                <div className="pt-5 text-right">{description}</div>
+                <div className="pt-5">{languages}</div>
             </div>
     );
 }
