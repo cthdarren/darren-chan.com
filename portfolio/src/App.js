@@ -60,8 +60,8 @@ function App() {
     }
   }
   return loading ? (
-    <div className="h-screen">
-      <div id="splashname" className="flex h-screen justify-center flex-col">
+    <div className="h-screen pb-8">
+      <div id="splashname" className="sm:text-5xl text-sm h-full flex justify-center flex-col">
                 This is my portfolio.</div>
       <div id="topBorder"> </div>
       <div id="bottomBorder"></div>
