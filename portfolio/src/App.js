@@ -36,7 +36,11 @@ function App() {
 
     function toggleTheme() {
         if (darkMode) {
+            document.getElementsByTagName("body")[0].classList.remove("dark");
+        } else {
+            document.getElementsByTagName("body")[0].classList.add("dark");
         }
+        setDarkMode(!darkMode)
     }
 
     function renderPage(index) {
@@ -82,7 +86,7 @@ function App() {
                     pages={pages}
                     page={currPage}
                     handleOnClickNavItem={(e) => handleNavClick(e)}
-                    toggleTheme={() => toggleTheme()}
+                    toggleTheme={toggleTheme}
                     darkMode={darkMode}
                 />
             </div>

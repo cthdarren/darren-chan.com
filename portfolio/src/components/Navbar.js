@@ -16,31 +16,30 @@ function NavBar({ pages, page, handleOnClickNavItem, toggleTheme, darkMode }) {
                     />
                 ))}
                 <div className="nav-item">
-                    <span
-                        id=""
-                        className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-4"
+                    <a
+                        href="https://github.com/cthdarren"
+                        target="_blank"
+                        rel="noreferrer"
                     >
-                        <a
-                            href="https://github.com/cthdarren"
-                            target="_blank"
-                            rel="noreferrer"
+                        <span
+                            id=""
+                            className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-3"
                         >
                             <div className="flex items-center">
-                                GitHub{" "}
-                                <img className="ml-1 sm:w-3 w-2" src="newtab.png" alt="" />
+                                GitHub
                             </div>
-                        </a>
-                    </span>
+                        </span>
+                    </a>
                 </div>
 
                 <div className="nav-item">
                     <span
                         id=""
-                        className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-4"
+                        className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-3"
                         onClick={() => toggleTheme()}
                     >
                         <div className="flex items-center text-nowrap">
-                            {darkMode ? "Dark Mode" : "Light Mode"}
+                            {darkMode ? "Light Mode" : "Dark Mode"}
                         </div>
                     </span>
                 </div>
