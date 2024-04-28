@@ -16,8 +16,8 @@ import {
 export default function WorkExperience() {
     return (
         // svg adapted from https://safetpojskic.com/
-        <div className="w-8/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-5/12 2xl:w-5/12 pb-5 sm:pb-0 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
-            <div id="treething" class="absolute -ml-16 lg:-ml-20 2xl:-ml-32 mt-10">
+        <div className="w-8/12 sm:w-5/12 md:w-9/12 lg:w-6/12 xl:w-5/12 2xl:w-5/12 pb-5 sm:pb-0 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
+            <div id="treething" class="absolute -ml-16 lg:-ml-32 mt-10">
                               
                 <svg
                     viewBox="0 50 20 889"

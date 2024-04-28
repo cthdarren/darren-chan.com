@@ -2,38 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-body.dark{
-    background-color:#111;
-    color:#fff;
+body.dark {
+  background-color: #111;
+  color: #fff;
 }
 
-body.dark #name > p, body.dark #footer > p {
-    border-color: #333;
+body.dark #name > p,
+body.dark #footer > p {
+  border-color: #333;
 }
 
-body.dark .treenode{
-    border-color: #333;
-    background-color: #444;
+body.dark .treenode {
+  border-color: #333;
+  background-color: #444;
 }
 
-.treenode{
-    transition: border-color 1s, background-color 1s;
+.treenode {
+  transition:
+    border-color 1s,
+    background-color 1s;
 }
 
-body.dark .treenode > div{
-    border-color: #ccc;
-    background-color: #ccc;
+body.dark .treenode > div {
+  border-color: #ccc;
+  background-color: #ccc;
 }
 
-#name > p, #footer > p{
-    transition: border-color 1s;
+#name > p,
+#footer > p {
+  transition: border-color 1s;
 }
 
-body{
-    background-color:#fff;
-    transition:background-color 1s, color 2s;
+body {
+  background-color: #fff;
+  transition:
+    background-color 1s,
+    color 2s;
 }
-
 
 .App {
   text-align: center;
@@ -48,12 +53,12 @@ body{
   animation-delay: 1.3s;
   width: 100%;
   text-align: center;
-    padding-bottom:60px;
+  padding-bottom: 60px;
   margin: auto;
 }
 
 #topBorder {
-  border-top: 2px solid ;
+  border-top: 2px solid;
   position: absolute;
   top: 50%;
   animation: startuptopmobile 2s forwards;
@@ -61,11 +66,27 @@ body{
 }
 
 #bottomBorder {
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid;
   position: absolute;
   bottom: 50%;
   animation: startupbtmmobile 2s forwards;
   animation-delay: 1.5s;
+}
+
+body.dark #topBorder {
+  border-top: 2px solid;
+  position: absolute;
+  top: 50%;
+  animation: startuptopmobiledark 2s forwards;
+  animation-delay: 1s;
+}
+
+body.dark #bottomBorder {
+  border-bottom: 2px solid;
+  position: absolute;
+  bottom: 50%;
+  animation: startupbtmmobiledark 2s forwards;
+  animation-delay: 1s;
 }
 
 @media (min-width: 640px) {
@@ -82,6 +103,21 @@ body{
     position: absolute;
     bottom: 50%;
     animation: startupbtm 2s forwards;
+    animation-delay: 1s;
+  }
+  body.dark #topBorder {
+    border-top: 2px solid;
+    position: absolute;
+    top: 50%;
+    animation: startuptopdark 2s forwards;
+    animation-delay: 1s;
+  }
+
+  body.dark #bottomBorder {
+    border-bottom: 2px solid;
+    position: absolute;
+    bottom: 50%;
+    animation: startupbtmdark 2s forwards;
     animation-delay: 1s;
   }
 }
@@ -151,12 +187,12 @@ body{
   animation-delay: 1.6s;
 }
 
-#name {
+#name > p > span{
   z-index: 100;
   animation: fade-in 0.5s forwards;
 }
 
-#footer {
+#footer > p > span{
   opacity: 0;
   animation: fade-in 0.5s forwards;
   animation-delay: 1.5s;
@@ -251,6 +287,90 @@ body{
     left: 1.25rem;
     right: 1.25rem;
     border-color: #e5e7eb;
+    width: calc(100%-2.5rem);
+  }
+}
+
+@keyframes startuptopdark {
+  0% {
+    width: calc(100% -8rem);
+    right: 50%;
+    left: 50%;
+  }
+  50% {
+    width: calc(100% -8rem);
+    left: 4rem;
+    right: 4rem;
+    top: 50%;
+  }
+  100% {
+    top: 2.5rem;
+    left: 4rem;
+    right: 4rem;
+    width: calc(100% -8rem);
+    border-color: #333;
+  }
+}
+
+@keyframes startupbtmdark {
+  0% {
+    width: calc(100%-8rem);
+    left: 50%;
+    right: 50%;
+  }
+  50% {
+    width: calc(100%-8rem);
+    left: 4rem;
+    right: 4rem;
+    bottom: 50%;
+  }
+  100% {
+    bottom: 4rem;
+    left: 4rem;
+    right: 4rem;
+    border-color: #333;
+    width: calc(100%-8rem);
+  }
+}
+
+@keyframes startuptopmobiledark {
+  0% {
+    width: calc(100%-2.5rem);
+    right: 50%;
+    left: 50%;
+  }
+  50% {
+    width: calc(100%-2.5rem);
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 50%;
+  }
+  100% {
+    top: 2.5rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    width: calc(100%-2.5rem);
+    border-color: #333;
+  }
+}
+
+@keyframes startupbtmmobiledark {
+  0% {
+    width: calc(100%-2.5rem);
+    left: 50%;
+    right: 50%;
+  }
+  50% {
+    width: calc(100%-2.5rem);
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 50%;
+  }
+  100% {
+    bottom: 5rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    border-color: #333;
     width: calc(100%-2.5rem);
   }
 }

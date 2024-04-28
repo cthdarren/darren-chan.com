@@ -1,11 +1,10 @@
 import "./App.css";
 import Home from "./pages/Home";
 import NavBar from "./components/Navbar";
-import { React, useState, useRef, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import WorkExperience from "./pages/WorkExperience";
 import Projects from "./pages/Projects";
-import Languages from "./pages/Languages";
-import Contact from "./pages/Contact";
+import Info from "./pages/Info";
 
 function App() {
     const [currPage, setCurrPage] = useState(0);
@@ -14,7 +13,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(false);
     const [timeoutId, setTimeoutId] = useState(null);
 
-    const pages = ["Home", "Experience", "Projects", "Languages", "Contact"];
+    const pages = ["Home", "Experience", "Projects", "Info"];
 
     useEffect(() => {
         setTimeout(() => {
@@ -22,6 +21,22 @@ function App() {
         }, 3500);
     }, [loading]);
 
+    useEffect(() => {
+        if (window.matchMedia) {
+            // Check if the dark-mode Media-Query matches
+            console.log(window.matchMedia("(prefers-color-scheme: dark)").matches);
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                setDarkMode(true);
+                document.getElementsByTagName("body")[0].classList.add("dark");
+            } else {
+                setDarkMode(false);
+                document.getElementsByTagName("body")[0].classList.remove("dark");
+            }
+        } else {
+            setDarkMode(false);
+            document.getElementsByTagName("body")[0].classList.remove("dark");
+        }
+    },[])
     function handleNavClick(e) {
         let temp = null;
         clearTimeout(timeoutId);
@@ -40,7 +55,7 @@ function App() {
         } else {
             document.getElementsByTagName("body")[0].classList.add("dark");
         }
-        setDarkMode(!darkMode)
+        setDarkMode(!darkMode);
     }
 
     function renderPage(index) {
@@ -52,9 +67,7 @@ function App() {
             case 2:
                 return <Projects />;
             case 3:
-                return <Languages />;
-            case 4:
-                return <Contact />;
+                return <Info />;
             default:
                 return <></>;
         }
@@ -65,7 +78,7 @@ function App() {
                 id="splashname"
                 className="sm:text-5xl text-sm h-full flex justify-center flex-col"
             >
-                a minimalist, with a love for software.
+                <span>a minimalist, with a love for software.</span>
             </div>
             <div id="topBorder"> </div>
             <div id="bottomBorder"></div>
@@ -76,12 +89,12 @@ function App() {
                 id="name"
                 className="text-left w-full absolute top-10 md:top-10 md:px-16 px-5 "
             >
-                <p className="border-t-2 pt-5 sm:-ml-3 text-xl md:text-8xl md:font-thin">
-                    Darren Chan
+                <p className="border-t-2 pt-5 text-xl md:text-8xl md:font-thin">
+                    <span className="md:-ml-3 -ml-0.5">Darren Chan</span>
                 </p>
             </div>
 
-            <div className="text-left absolute top-24 md:top-32 md:px-16 px-5 z-50">
+            <div className="text-left absolute top-24 md:top-44 md:px-16 px-5 z-50">
                 <NavBar
                     pages={pages}
                     page={currPage}
@@ -105,7 +118,7 @@ function App() {
             <div id="currpage">
                 <div
                     id="contentwrapper"
-                    className="w-full absolute top-10 sm:top-10 sm:bottom-16 bottom-20 flex flex-row justify-end overflow-scroll"
+                    className="w-full absolute top-10 sm:top-10 sm:bottom-16 bottom-20 sm:px-20 flex flex-row justify-end overflow-scroll"
                 >
                     {renderPage(pageIndex)}
                 </div>

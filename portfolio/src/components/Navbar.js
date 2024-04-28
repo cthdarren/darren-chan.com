@@ -16,23 +16,6 @@ function NavBar({ pages, page, handleOnClickNavItem, toggleTheme, darkMode }) {
                     />
                 ))}
                 <div className="nav-item">
-                    <a
-                        href="https://github.com/cthdarren"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <span
-                            id=""
-                            className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-3"
-                        >
-                            <div className="flex items-center">
-                                GitHub
-                            </div>
-                        </span>
-                    </a>
-                </div>
-
-                <div className="nav-item">
                     <span
                         id=""
                         className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-3"
