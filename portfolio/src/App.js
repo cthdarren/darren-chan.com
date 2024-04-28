@@ -43,7 +43,7 @@ function App() {
                 id="name"
                 className="text-left w-full absolute top-10 md:top-16 md:px-16 px-10"
             >
-                <p className="border-t-2 pt-5 text-3xl md:text-9xl">Darren Chan</p>
+                <p className="border-t-2 pt-5 text-3xl md:text-8xl">Darren Chan</p>
                 <NavBar
                     pages={pages}
                     page={currPage}
