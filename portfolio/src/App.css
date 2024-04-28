@@ -41,7 +41,7 @@
 }
 
 .contentpage{
-  animation: fade-in 0.5s;
+  animation: fade-in 0.6s;
 }
 
 @keyframes fade-in {

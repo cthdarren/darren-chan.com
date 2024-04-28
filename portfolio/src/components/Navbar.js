@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 import NavItem from "./NavItem";
 
 function NavBar({ pages, page, handleOnClickNavItem }) {
