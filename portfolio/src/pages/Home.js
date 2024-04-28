@@ -9,8 +9,7 @@ function Home() {
             cybersecurity diploma because I thought hacking was cool
             at the time. <br />
             <br />
-            As it turns out, hacking <i>is</i> pretty cool, but the theory is pretty
-            dry, and I figured it wasn't for me. <br /> <br />
+            As it turns out, hacking <i>is</i> pretty cool, but it just wasn't exactly what I was looking for. <br /> <br />
             During that time, my love for programming blossomed, and I haven't grown
             tired of it since.
         </div>
