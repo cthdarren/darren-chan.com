@@ -62,7 +62,7 @@ function App() {
   return loading ? (
     <div className="h-screen pb-8">
       <div id="splashname" className="sm:text-5xl text-sm h-full flex justify-center flex-col">
-                This is my portfolio.</div>
+                a minimalist, with a love for software.</div>
       <div id="topBorder"> </div>
       <div id="bottomBorder"></div>
     </div>
