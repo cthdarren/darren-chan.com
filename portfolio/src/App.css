@@ -10,6 +10,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+#currpage{
+    transition:opacity 0.3s;
+}
 .selectednavbaritem::after {
     content: '';
     position: absolute;
