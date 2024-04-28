@@ -12,7 +12,7 @@ function App() {
     const [currPage, setCurrPage] = useState(0);
     const pages = [
         "Home",
-        "Work Experience",
+        "Experience",
         "Projects",
         "Languages",
         "Education",
