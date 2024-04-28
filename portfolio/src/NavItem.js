@@ -1,9 +1,15 @@
-function NavItem({ name, link }) {
+function NavItem({ name, link, index, currpage, handleOnClickNavItem}) {
     return (
         <div className="pb-3">
-            <span id="" className="relative navbaritem z-50 cursor-pointer ">
+            {index === currpage? (
+            <span id="" className="relative selectednavbaritem font-bold z-50 cursor-pointer">
                 {name}
             </span>
+            ) : (
+            <span id="" className="relative navbaritem z-50 cursor-pointer" onClick={() => handleOnClickNavItem(index)}>
+                {name}
+            </span>
+            )}
         </div>
     );
 }

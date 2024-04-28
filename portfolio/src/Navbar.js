@@ -1,16 +1,20 @@
 import "./index.css";
 import NavItem from "./NavItem";
 
-function NavBar() {
+function NavBar({ pages, page, handleOnClickNavItem }) {
     return (
-        <div className="flex flex-col text-base mt-9">
+        <div className="flex flex-col md:text-base text-xs md:mt-9 mt-3">
             <div id="navbar" className="z-50">
-                <NavItem name="Home" link="" />
-                <NavItem name="Work Experience" link="" />
-                <NavItem name="Projects" link="" />
-                <NavItem name="Languages" link="" />
-                <NavItem name="Education" link="" />
-                <NavItem name="Contact" link="" />
+                {pages.map((name, index) => 
+                <NavItem
+                    name={name}
+                    link=""
+                    key={index}
+                    index={index}
+                    currpage={page}
+                    handleOnClickNavItem = {handleOnClickNavItem}
+                />
+                )}
             </div>
         </div>
     );
