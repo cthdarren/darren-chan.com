@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./pages/Home";
 import NavBar from "./components/Navbar";
-import { React, useState, useRef } from "react";
+import { React, useState, useRef, useEffect } from "react";
 import WorkExperience from "./pages/WorkExperience";
 import Projects from "./pages/Projects";
 import Languages from "./pages/Languages";
@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   const [currPage, setCurrPage] = useState(0);
+  const [loading, setLoading] = useState(true);
   const [pageIndex, setPageIndex] = useState(0);
   const [timeoutId, setTimeoutId] = useState(null);
 
@@ -22,19 +23,22 @@ function App() {
     "Contact",
   ];
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3500);
+  }, [loading]);
+
   function handleNavClick(e) {
     let temp = null;
     clearTimeout(timeoutId);
-    console.log("Cleared" + timeoutId);
     temp = setTimeout(() => {
-      document.getElementById("currpage").style.opacity = 1;
+      document.getElementById("contentwrapper").style.opacity = 1;
       setPageIndex(e);
-      console.log("finished " + timeoutId);
     }, 300);
     setTimeoutId(temp);
-    console.log("new " + timeoutId);
     setCurrPage(e);
-    document.getElementById("currpage").style.opacity = 0;
+    document.getElementById("contentwrapper").style.opacity = 0;
   }
 
   function renderPage(index) {
@@ -55,8 +59,15 @@ function App() {
         return <></>;
     }
   }
-  return (
-    <div className="App ">
+  return loading ? (
+    <div className="h-screen">
+      <div id="splashname" className="flex h-screen justify-center flex-col">
+                This is my portfolio.</div>
+      <div id="topBorder"> </div>
+      <div id="bottomBorder"></div>
+    </div>
+  ) : (
+    <div className="App">
       <div
         id="name"
         className="text-left w-full absolute top-10 md:top-10 md:px-16 px-5 "
@@ -80,11 +91,13 @@ function App() {
         </p>
       </div>
 
-      <div
-        id="currpage"
-        className="w-full absolute top-10 sm:top-10 sm:bottom-16 bottom-20 flex flex-row justify-end overflow-scroll"
-      >
-        {renderPage(pageIndex)}
+      <div id="currpage">
+        <div
+          id="contentwrapper"
+          className="w-full absolute top-10 sm:top-10 sm:bottom-16 bottom-20 flex flex-row justify-end overflow-scroll"
+        >
+          {renderPage(pageIndex)}
+        </div>
       </div>
     </div>
   );
