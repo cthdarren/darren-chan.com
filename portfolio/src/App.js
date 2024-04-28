@@ -5,7 +5,6 @@ import { React, useState, useRef, useEffect } from "react";
 import WorkExperience from "./pages/WorkExperience";
 import Projects from "./pages/Projects";
 import Languages from "./pages/Languages";
-import Education from "./pages/Education";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
     "Experience",
     "Projects",
     "Languages",
-    "Education",
     "Contact",
   ];
 
@@ -52,8 +50,6 @@ function App() {
       case 3:
         return <Languages />;
       case 4:
-        return <Education />;
-      case 5:
         return <Contact />;
       default:
         return <></>;
