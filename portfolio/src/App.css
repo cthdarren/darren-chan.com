@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body.dark{
+    background-color:#111;
+    color:#fff;
+}
 .App {
   text-align: center;
 }
@@ -112,6 +116,10 @@
 
 #navbar .nav-item:nth-child(6) {
   animation-delay: 1.5s;
+}
+
+#navbar .nav-item:nth-child(7) {
+  animation-delay: 1.6s;
 }
 
 #name {
