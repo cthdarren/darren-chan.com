@@ -18,7 +18,7 @@ function NavBar({ pages, page, handleOnClickNavItem }) {
                 <div className="nav-item">
                     <span
                         id=""
-                        className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-2.5"
+                        className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-4"
                     >
                         <a
                             href="https://github.com/cthdarren"
