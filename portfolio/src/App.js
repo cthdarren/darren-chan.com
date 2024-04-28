@@ -41,7 +41,7 @@ function App() {
         <div className="App ">
             <div
                 id="name"
-                className="text-left w-full absolute top-10 md:top-16 md:px-16 px-5 "
+                className="text-left w-full absolute top-10 md:top-10 md:px-16 px-5 "
             >
                 <p className="border-t-2 pt-5 text-3xl md:text-8xl">Darren Chan</p>
                 <NavBar
@@ -60,7 +60,7 @@ function App() {
                 </p>
             </div>
 
-            <div id="currpage" className="w-full absolute top-28 sm:top-16 sm:bottom-16 bottom-24 flex flex-row justify-end overflow-scroll">
+            <div id="currpage" className="w-full absolute top-28 sm:top-10 sm:bottom-16 bottom-20 flex flex-row justify-end overflow-scroll">
                 {renderPage(currPage)}
             </div>
         </div>
