@@ -15,21 +15,12 @@ import {
 
 export default function WorkExperience() {
     return (
+        // svg adapted from https://safetpojskic.com/
         <div className="w-8/12 sm:w-8/12 md:w-9/12 lg:w-8/12 xl:w-7/12 2xl:w-5/12 pb-5 sm:pb-0 md:px-20 px-5 xl:text-sm text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
             <div class="absolute -ml-16 lg:-ml-32 mt-10">
-                <div class="border-netural-700 ml-[27px] flex size-4 items-center justify-center rounded-full border shadow-sm">
-                    <div class="size-2 rounded-full  border border-neutral-400 bg-neutral-400"></div>
-                </div>
-
-                <div class="mt-[280px] absolute border-netural-700 ml-[27px] flex size-4 items-center justify-center rounded-full border shadow-sm">
-                    <div class="size-2 rounded-full  border border-neutral-400 bg-neutral-400"></div>
-                </div>
-
-                <div class="mt-[560px] absolute border-netural-700 ml-[27px] flex size-4 items-center justify-center rounded-full border shadow-sm">
-                    <div class="size-2 rounded-full  border border-neutral-400 bg-neutral-400"></div>
-                </div>
+                              
                 <svg
-                    viewBox="0 100 20 889"
+                    viewBox="0 50 20 889"
                     width="20"
                     height="889"
                     class=" ml-4 block"
