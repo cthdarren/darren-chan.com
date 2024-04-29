@@ -28,7 +28,7 @@ body.dark .treenode > div {
   background-color: #ccc;
 }
 
-#name > p,
+#header > p,
 #footer > p {
   transition: border-color 1s;
 }
@@ -44,8 +44,9 @@ body {
   text-align: center;
 }
 
-#header, #footer{
-    z-index:100;
+#header,
+#footer {
+  z-index: 100;
 }
 
 #contentwrapper {
@@ -191,20 +192,21 @@ body.dark #bottomBorder {
   animation-delay: 1.6s;
 }
 
-#name > p > span{
+#name > p > span {
   z-index: 100;
   animation: fade-in 0.5s forwards;
 }
 
-#footer > p > span{
+#footer > p > span {
   opacity: 0;
   animation: fade-in 0.5s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 
 #currpage {
   opacity: 0;
   animation: currpage-fade-in 1.5s forwards;
+  animation-delay: 0.7s;
 }
 
 .contentpage {
@@ -252,49 +254,6 @@ body.dark #bottomBorder {
     width: calc(100%-8rem);
   }
 }
-
-@keyframes startuptopmobile {
-  0% {
-    width: calc(100%-2.5rem);
-    right: 50%;
-    left: 50%;
-  }
-  50% {
-    width: calc(100%-2.5rem);
-    left: 1.25rem;
-    right: 1.25rem;
-    top: 50%;
-  }
-  100% {
-    top: 2.5rem;
-    left: 1.25rem;
-    right: 1.25rem;
-    width: calc(100%-2.5rem);
-    border-color: #e5e7eb;
-  }
-}
-
-@keyframes startupbtmmobile {
-  0% {
-    width: calc(100%-2.5rem);
-    left: 50%;
-    right: 50%;
-  }
-  50% {
-    width: calc(100%-2.5rem);
-    left: 1.25rem;
-    right: 1.25rem;
-    bottom: 50%;
-  }
-  100% {
-    bottom: 5rem;
-    left: 1.25rem;
-    right: 1.25rem;
-    border-color: #e5e7eb;
-    width: calc(100%-2.5rem);
-  }
-}
-
 @keyframes startuptopdark {
   0% {
     width: calc(100% -8rem);
@@ -337,6 +296,48 @@ body.dark #bottomBorder {
   }
 }
 
+@keyframes startuptopmobile {
+  0% {
+    width: calc(100%-2.5rem);
+    right: 50%;
+    left: 50%;
+  }
+  50% {
+    width: calc(100%-2.5rem);
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 50%;
+  }
+  100% {
+    top: 3.5rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    width: calc(100%-2.5rem);
+    border-color: #e5e7eb;
+  }
+}
+
+@keyframes startupbtmmobile {
+  0% {
+    width: calc(100%-2.5rem);
+    left: 50%;
+    right: 50%;
+  }
+  50% {
+    width: calc(100%-2.5rem);
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 50%;
+  }
+  100% {
+    bottom: 3.5rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    border-color: #e5e7eb;
+    width: calc(100%-2.5rem);
+  }
+}
+
 @keyframes startuptopmobiledark {
   0% {
     width: calc(100%-2.5rem);
@@ -350,7 +351,7 @@ body.dark #bottomBorder {
     top: 50%;
   }
   100% {
-    top: 2.5rem;
+    top: 3.5rem;
     left: 1.25rem;
     right: 1.25rem;
     width: calc(100%-2.5rem);
@@ -371,7 +372,7 @@ body.dark #bottomBorder {
     bottom: 50%;
   }
   100% {
-    bottom: 5rem;
+    bottom: 3.5rem;
     left: 1.25rem;
     right: 1.25rem;
     border-color: #333;
@@ -381,9 +382,6 @@ body.dark #bottomBorder {
 
 @keyframes currpage-fade-in {
   0% {
-    opacity: 0;
-  }
-  66% {
     opacity: 0;
   }
   100% {
