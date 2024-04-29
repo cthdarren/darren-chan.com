@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
- color:#000;
+body {
+  background-color: #fff;
+  color: #000;
+  transition:
+    background-color 1s,
+    color 2s;
 }
 
 body.dark {
@@ -34,21 +38,14 @@ body.dark #navdivider {
 }
 
 #header > p,
-#footer > p{
+#footer > p {
   transition: border-color 1s;
 }
 
-#navdivider{
-    opacity: 0;
-    transition: border-color 2s;
-    animation: fade-in 0.5s forwards;
-}
-
-body {
-  background-color: #fff;
-  transition:
-    background-color 1s,
-    color 2s;
+#navdivider {
+  opacity: 0;
+  transition: border-color 2s;
+  animation: fade-in 0.5s forwards;
 }
 
 .App {
@@ -191,7 +188,8 @@ body.dark #bottomBorder {
   animation-delay: 1.3s;
 }
 
-#navbar .nav-item:nth-child(5) , #navdivider{
+#navbar .nav-item:nth-child(5),
+#navdivider {
   animation-delay: 1.4s;
 }
 
