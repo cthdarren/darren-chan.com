@@ -1,7 +1,7 @@
-function ProjectItem({ title, duration, projectType, platform, languages }) {
+function ProjectItem({ title, link, duration, projectType, platform, languages }) {
   return (
     <div className="flex md:flex-row  flex-col-reverse justify-end py-5 ">
-      <div className="flex flex-col-reverse md:flex-row biglink">
+      <a className="flex flex-col-reverse md:flex-row biglink" href={link} target="_blank" rel="noreferrer">
         <div className="flex md:mr-8 flex-col-reverse md:flex-col">
           <div className="-mr-2 pt-2">{languages}</div>
           <div className="grow md:self-end text-right flex items-end justify-end">
@@ -13,7 +13,7 @@ function ProjectItem({ title, duration, projectType, platform, languages }) {
         <div className="text-4xl md:text-6xl xl:text-7xl font-thin md:-mb-2 md:font-thin">
           {title}
         </div>
-      </div>
+      </a>
     </div>
   );
 }

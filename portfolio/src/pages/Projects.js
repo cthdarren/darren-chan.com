@@ -16,6 +16,7 @@ export default function Projects() {
         title={"Portfolio"}
         projectType={"Personal"}
         platform={"Web Application"}
+        link={"https://darren-chan.com"}
         duration={"May 2024"}
         languages={
           <div className="flex justify-end">
@@ -27,6 +28,7 @@ export default function Projects() {
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
+        link={"https://github.com/cthdarren/WayFare"}
         duration={"Apr 2024"}
         languages={
           <div className="flex justify-end">
@@ -38,6 +40,7 @@ export default function Projects() {
         title={"WW Downloader"}
         projectType={"Personal"}
         platform={"Python Script"}
+        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
         duration={"Jul 2022"}
         languages={
           <div className="flex justify-end">
@@ -49,6 +52,7 @@ export default function Projects() {
         title={"AutoTemptaking"}
         projectType={"Personal"}
         platform={"Python Script"}
+        link={"https://github.com/cthdarren/autotemptaking"}
         duration={"Jan 2021"}
         languages={
           <div className="flex justify-end">
@@ -60,6 +64,7 @@ export default function Projects() {
         title={"HS Batch Downloader"}
         projectType={"Personal"}
         platform={"Tkinter Application"}
+        link={"https://github.com/cthdarren/horriblesubs-batch-downloader"}
         duration={"Jul 2020"}
         languages={
           <div className="flex justify-end">
@@ -71,6 +76,7 @@ export default function Projects() {
         title={"InfiniteLodging"}
         projectType={"School"}
         platform={"Web Application"}
+        link={"https://github.com/cthdarren/Infinite-Lodging"}
         duration={"Aug 2018"}
         languages={
           <div className="flex justify-end">
