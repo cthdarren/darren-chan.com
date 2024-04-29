@@ -12,7 +12,7 @@ export default function Info() {
           </a>
         </div>
         <div className="flex justify-end md:pt-20 pt-10">
-          <a href="https://drive.google.com/file/d/1SeveHzbZPavhHVMNIY7zI7o9GJPC9W7g/view" target="_blank" rel="noreferrer" className="flex items-center">
+          <a href="https://drive.google.com/file/d/1lristA9NJlbWIjE4-xXqPK8zUwr2_-OB/view" target="_blank" rel="noreferrer" className="flex items-center">
             <span className="biglink">Résumé</span>
           </a>
       </div>
