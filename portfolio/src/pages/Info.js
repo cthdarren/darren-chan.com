@@ -1,6 +1,6 @@
 export default function Info() {
   return (
-    <div className="md:text-8xl md:font-thin font-thin text-4xl text-right contentpage sm:pt-40 pt-64 flex flex-col justify-end md:pb-20 pb-10">
+    <div className="md:text-8xl md:font-thin font-thin text-6xl text-right contentpage sm:pt-40 pt-64 flex flex-col justify-end md:pb-20 pb-10">
         <div className="flex justify-end pt-10">
           <a href="https://github.com/cthdarren" className="flex items-center" target="_blank" rel="noreferrer">
             <span className="biglink">GitHub</span>
