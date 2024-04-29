@@ -205,8 +205,8 @@ body.dark #bottomBorder {
 
 #currpage {
   opacity: 0;
-  animation: currpage-fade-in 1.5s forwards;
-  animation-delay: 0.7s;
+  animation: fade-in 0.5s forwards;
+  animation-delay: 1.7s;
 }
 
 .contentpage {
@@ -377,15 +377,6 @@ body.dark #bottomBorder {
     right: 1.25rem;
     border-color: #333;
     width: calc(100%-2.5rem);
-  }
-}
-
-@keyframes currpage-fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
