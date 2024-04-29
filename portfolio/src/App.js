@@ -119,7 +119,7 @@ function App() {
             <div id="currpage">
                 <div
                     id="contentwrapper"
-                    className="w-full absolute top-14 sm:top-16 sm:bottom-16 bottom-14 md:px-16 px-5 flex flex-row justify-end overflow-scroll"
+                    className="no-scrollbar w-full absolute top-14 sm:top-16 sm:bottom-16 bottom-14 md:px-16 px-5 flex flex-row justify-end overflow-scroll"
                 //className="w-full absolute pt-10 sm:pt-10 sm:pb-16 pb-20 bottom-1 top-1 md:px-20 flex flex-row justify-end overflow-scroll"
                 >
                     {renderPage(pageIndex)}
