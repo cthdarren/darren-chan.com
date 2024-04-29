@@ -85,11 +85,15 @@ function App() {
         </div>
     ) : (
         <div className="App">
+                <div id="header" className="pt-10 md:pt-16 md:px-16 px-5 bg-[#111]/100 backdrop-blur-[1px] absolute top-0 left-0 w-full">
+                <p className="border-b-2">
+                </p>
+                </div>
             <div
                 id="name"
-                className="text-left w-full absolute top-10 md:top-10 md:px-16 px-5 "
+                className="text-left w-full absolute top-10 md:top-16 md:px-16 px-5 "
             >
-                <p className="border-t-2 pt-5 text-xl md:text-8xl md:font-thin">
+                <p className="pt-5 text-xl md:text-8xl md:font-thin">
                     <span className="md:-ml-3 -ml-0.5">Darren Chan</span>
                 </p>
             </div>
@@ -105,7 +109,7 @@ function App() {
             </div>
             <div
                 id="footer"
-                className="text-md w-full text-left absolute bottom-5 md:px-16 px-5"
+                className="text-md w-full text-left absolute bottom-0 pb-5 md:px-16 px-5 bg-[#111]/100 backdrop-blur-[0px]"
             >
                 <p className="border-t-2 py-3 md:text-sm text-xs flex sm:flex-row flex-col">
                     a minimalist, with a love for software
@@ -118,7 +122,7 @@ function App() {
             <div id="currpage">
                 <div
                     id="contentwrapper"
-                    className="w-full absolute top-10 sm:top-10 sm:bottom-16 bottom-20 sm:px-20 flex flex-row justify-end overflow-scroll"
+                    className="w-full absolute pt-10 sm:pt-10 sm:pb-16 pb-20 bottom-1 top-1 md:px-20 flex flex-row justify-end overflow-scroll"
                 >
                     {renderPage(pageIndex)}
                 </div>

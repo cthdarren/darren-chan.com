@@ -7,7 +7,7 @@ body.dark {
   color: #fff;
 }
 
-body.dark #name > p,
+body.dark #header > p,
 body.dark #footer > p {
   border-color: #333;
 }
@@ -42,6 +42,10 @@ body {
 
 .App {
   text-align: center;
+}
+
+#header, #footer{
+    z-index:100;
 }
 
 #contentwrapper {
@@ -220,7 +224,7 @@ body.dark #bottomBorder {
     top: 50%;
   }
   100% {
-    top: 2.5rem;
+    top: 4rem;
     left: 4rem;
     right: 4rem;
     width: calc(100% -8rem);
