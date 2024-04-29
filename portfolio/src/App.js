@@ -81,7 +81,7 @@ function App() {
         className="text-left w-full absolute top-14 md:top-16 md:px-16 px-5 "
       >
         <p className="pt-5 text-xl md:text-8xl md:font-thin">
-          <span className="md:-ml-3 -ml-0.5">Darren Chan</span>
+          <span className="md:-ml-2.5 -ml-0.5">Darren Chan</span>
         </p>
       </div>
 
@@ -107,7 +107,7 @@ function App() {
       <div id="currpage">
         <div
           id="contentwrapper"
-          className="w-full absolute top-14 sm:top-16 sm:bottom-16 bottom-14 md:px-20 flex flex-row justify-end overflow-scroll"
+          className="w-full absolute top-14 sm:top-16 sm:bottom-16 bottom-14 md:px-16 px-5 flex flex-row justify-end overflow-scroll"
           //className="w-full absolute pt-10 sm:pt-10 sm:pb-16 pb-20 bottom-1 top-1 md:px-20 flex flex-row justify-end overflow-scroll"
         >
           {renderPage(pageIndex)}

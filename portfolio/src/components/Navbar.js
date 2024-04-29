@@ -15,7 +15,7 @@ function NavBar({ pages, page, handleOnClickNavItem, toggleTheme, darkMode }) {
                         handleOnClickNavItem={handleOnClickNavItem}
                     />
                 ))}
-                <div className="mt-6 mb-7 -mr-10 w-[16%]">
+                <div className="mt-6 mb-7 -mr-10 w-[12%]">
                 <div id="navdivider" className="border-t-[1px] border-[#333]"></div>
                 </div>
                 <div className="nav-item flex ">

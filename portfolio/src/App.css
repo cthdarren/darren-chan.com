@@ -222,6 +222,20 @@ body.dark #bottomBorder {
   animation: fade-in 0.6s;
 }
 
+.biglink{
+    transition: color 2s;
+    cursor:pointer;
+}
+
+.biglink:hover{
+    transition: color 0.3s;
+    color: #bbb;
+}
+
+body.dark .biglink:hover{
+    color: #555;
+}
+
 @keyframes startuptop {
   0% {
     width: calc(100% -8rem);
