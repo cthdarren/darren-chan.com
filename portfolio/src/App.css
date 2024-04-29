@@ -162,6 +162,13 @@ body.dark #bottomBorder {
   transition: width 0.1s;
 }
 
+.navbaritem.darkmode{
+    font-family: "Anonymous Pro", "monospaced";
+}
+.navbaritem.darkmode::after {
+  border-bottom: 1px solid; /* Initial border style (transparent) */
+}
+
 .navbaritem:hover::after {
   width: 100%;
 }
