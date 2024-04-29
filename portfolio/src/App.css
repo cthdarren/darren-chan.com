@@ -6,7 +6,7 @@ body {
   color: #000;
   transition:
     background-color 0.7s,
-    color 1.2s ;
+    color 1.2s;
 }
 
 body.dark {
@@ -26,14 +26,13 @@ body.dark #footer > p {
   }
 }
 .biglink:hover {
-    transition: color 0.2s;
+  transition: color 0.2s;
   color: #bbb;
 }
 
 body.dark .biglink:hover {
   color: #555;
 }
-
 
 body.dark .treenode {
   border-color: #333;
@@ -162,8 +161,11 @@ body.dark #bottomBorder {
   transition: width 0.1s;
 }
 
-.navbaritem.darkmode{
-    font-family: "Anonymous Pro", "monospaced";
+.navbaritem.darkmode {
+  opacity: 0;
+  font-family: "Anonymous Pro", "monospaced";
+  animation: fade-in 0.5s forwards;
+  animation-delay: 1.7s;
 }
 .navbaritem.darkmode::after {
   border-bottom: 1px solid; /* Initial border style (transparent) */
@@ -210,8 +212,7 @@ body.dark #bottomBorder {
   animation-delay: 1.3s;
 }
 
-#navbar .nav-item:nth-child(5),
-#navdivider {
+#navbar .nav-item:nth-child(5) {
   animation-delay: 1.4s;
 }
 

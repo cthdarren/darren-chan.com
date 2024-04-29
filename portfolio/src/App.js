@@ -61,7 +61,7 @@ function App() {
         <div className="h-screen pb-8">
             <div
                 id="splashname"
-                className="sm:text-5xl text-sm h-full flex justify-center flex-col"
+                className="sm:text-5xl md:font-light text-sm h-full flex justify-center flex-col"
             >
                 <span>a minimalist, with a love for software.</span>
             </div>
@@ -94,7 +94,7 @@ function App() {
                     darkMode={darkMode}
                 />
             </div>
-            <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs md:text-lg font-thin absolute">
+            <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs md:text-base font-thin absolute">
                 <span
                     id=""
                     className="darkmode navbaritem cursor-pointer"
