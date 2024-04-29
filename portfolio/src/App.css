@@ -308,7 +308,7 @@ body.dark #bottomBorder {
     top: 50%;
   }
   100% {
-    top: 2.5rem;
+    top: 4rem;
     left: 4rem;
     right: 4rem;
     width: calc(100% -8rem);
