@@ -21,6 +21,7 @@ body.dark #footer > p {
 
 @media (min-width: 640px) {
   .biglink {
+    transition: color 1.2s;
     cursor: pointer;
   }
 }
