@@ -10,7 +10,7 @@ function App() {
   const [currPage, setCurrPage] = useState(0);
   const [loading, setLoading] = useState(true);
   const [pageIndex, setPageIndex] = useState(0);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [timeoutId, setTimeoutId] = useState(null);
 
   const pages = ["Home", "Experience", "Projects", "Info"];
@@ -21,26 +21,11 @@ function App() {
     }, 3500);
   }, [loading]);
 
-  useEffect(() => {
-    if (window.matchMedia) {
-      // Check if the dark-mode Media-Query matches
-      console.log(window.matchMedia("(prefers-color-scheme: dark)").matches);
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        setDarkMode(true);
-        document.getElementsByTagName("body")[0].classList.add("dark");
-      } else {
-        setDarkMode(false);
-        document.getElementsByTagName("body")[0].classList.remove("dark");
-      }
-    } else {
-      setDarkMode(false);
-      document.getElementsByTagName("body")[0].classList.remove("dark");
-    }
-  }, []);
   function handleNavClick(e) {
     let temp = null;
     clearTimeout(timeoutId);
     temp = setTimeout(() => {
+      document.getElementById("contentwrapper").scrollTop= 0;
       document.getElementById("contentwrapper").style.opacity = 1;
       setPageIndex(e);
     }, 300);
@@ -87,7 +72,7 @@ function App() {
     <div className="App">
       <div
         id="header"
-        className="pt-14 md:pt-16 md:px-16 px-5 bg-inherit/100 backdrop-blur-[1px] absolute top-0 left-0 w-full"
+        className="pt-14 md:pt-16 md:px-16 px-5 absolute top-0 left-0 w-full"
       >
         <p className="border-b-2"></p>
       </div>
@@ -111,7 +96,7 @@ function App() {
       </div>
       <div
         id="footer"
-        className="text-md w-full text-left absolute bottom-0 md:pb-5 pb-2 md:px-16 px-5 bg-inherit/100 backdrop-blur-[0px]"
+        className="text-md w-full text-left absolute bottom-0 md:pb-5 pb-2 md:px-16 px-5"
       >
         <p className="border-t-2 md:pt-4 md:pb-2 pt-5 pb-3 md:text-sm text-xs flex flex-row">
           <span>a minimalist, with a love for software</span>

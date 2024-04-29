@@ -92,13 +92,12 @@ export default function WorkExperience() {
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              {" "}
               <HtmlIcon /> <CssIcon /> <JavascriptIcon /> <BootstrapIcon />{" "}
               <DockerIcon />
             </div>
           }
         />
-        <div className="h-48"></div>
+        <div className="md:p-10"></div>
       </div>
     </div>
   );

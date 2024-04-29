@@ -11,7 +11,7 @@ import {
 
 export default function Projects() {
   return (
-    <div className="w-8/12 md:w-10/12 lg:w-10/12 pb-5 sm:pb-0 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
+    <div className="w-8/12 md:w-10/12 lg:w-10/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
       <ProjectItem
         title={"Portfolio"}
         projectType={"Personal"}
@@ -78,6 +78,7 @@ export default function Projects() {
           </div>
         }
       />
+      <div className="p-5 md:p-10"></div>
     </div>
   );
 }

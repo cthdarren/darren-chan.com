@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 
 function NavBar({ pages, page, handleOnClickNavItem, toggleTheme, darkMode }) {
     return (
-        <div className="flex flex-col w-1/2 md:text-base text-xs md:mt-9 mt-3">
+        <div className="flex flex-col  md:text-base text-xs md:mt-9 mt-3">
             <div id="navbar" className="">
                 {pages.map((name, index) => (
                     <NavItem
@@ -15,14 +15,17 @@ function NavBar({ pages, page, handleOnClickNavItem, toggleTheme, darkMode }) {
                         handleOnClickNavItem={handleOnClickNavItem}
                     />
                 ))}
-                <div className="nav-item">
+                <div className="mt-6 mb-7 -mr-10 w-[16%]">
+                <div id="navdivider" className="border-t-[1px] border-[#333]"></div>
+                </div>
+                <div className="nav-item flex ">
                     <span
                         id=""
-                        className="relative navbaritem z-50 cursor-pointer h-full inline-block pt-3 pb-1.5 sm:pb-1 sm:pt-3"
+                        className="relative border-t-1 navbaritem z-50 cursor-pointer h-full inline-block pb-1.5 sm:pb-1 "
                         onClick={() => toggleTheme()}
                     >
-                        <div className="flex items-center text-nowrap">
-                            {darkMode ? "Light Mode" : "Dark Mode"}
+                        <div className="border-white items-center text-nowrap">
+                            {darkMode ? "Light" : "Dark"}
                         </div>
                     </span>
                 </div>
