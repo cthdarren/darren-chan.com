@@ -90,11 +90,9 @@ function App() {
                     pages={pages}
                     page={currPage}
                     handleOnClickNavItem={(e) => handleNavClick(e)}
-                    toggleTheme={toggleTheme}
-                    darkMode={darkMode}
                 />
             </div>
-            <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs md:text-base font-thin absolute">
+            <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs sm:text-base md:text-base absolute">
                 <span
                     id=""
                     className="darkmode navbaritem cursor-pointer"
