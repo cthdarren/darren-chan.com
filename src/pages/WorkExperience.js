@@ -97,7 +97,7 @@ export default function WorkExperience() {
             </div>
           }
         />
-        <div className="md:p-10"></div>
+        <div className="md:p-5"></div>
       </div>
     </div>
   );

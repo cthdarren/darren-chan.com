@@ -84,7 +84,7 @@ export default function Projects() {
           </div>
         }
       />
-      <div className="p-5 md:p-10"></div>
+      <div className="p-1 md:p-5"></div>
     </div>
   );
 }
