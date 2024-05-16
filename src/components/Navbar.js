@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 
 function NavBar({ pages, page, handleOnClickNavItem, toggleTheme, darkMode }) {
     return (
-        <div className="flex flex-col  md:text-base text-xs md:mt-9 mt-3">
+        <div className="flex flex-col  md:text-base text-xs 2xl:mt-9 mt-3">
             <div id="navbar" className="">
                 {pages.map((name, index) => (
                     <NavItem

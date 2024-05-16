@@ -61,7 +61,7 @@ function App() {
         <div className="h-screen pb-8">
             <div
                 id="splashname"
-                className="sm:text-5xl md:font-light text-sm h-full flex justify-center flex-col"
+                className="2xl:text-5xl md:font-light md:text-3xl h-full flex justify-center flex-col"
             >
                 <span>a minimalist, with a love for software.</span>
             </div>
@@ -80,19 +80,19 @@ function App() {
                 id="name"
                 className="text-left w-full absolute top-14 md:top-16 md:px-16 px-5 "
             >
-                <p className="pt-5 text-xl md:text-8xl md:font-thin">
+                <p className="pt-5 text-3xl md:text-7xl 2xl:text-8xl font-light md:font-thin">
                     <span className="md:-ml-2.5 -ml-0.5">Darren Chan</span>
                 </p>
             </div>
 
-            <div className="text-left absolute top-24 md:top-44 md:px-16 px-5 z-50">
+            <div className="text-left absolute top-32 xl:top-40 2xl:top-44 md:px-16 px-5 z-50">
                 <NavBar
                     pages={pages}
                     page={currPage}
                     handleOnClickNavItem={(e) => handleNavClick(e)}
                 />
             </div>
-            <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs sm:text-base md:text-base absolute">
+            <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs xl:text-sm 2xl:text-base absolute">
                 <span
                     id=""
                     className="darkmode navbaritem cursor-pointer"

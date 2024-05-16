@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div className="w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-3/12 pb-6 sm:pb-12 md:pr-0 pr-5 md:text-lg text-sm text-justify contentpage self-end">
+        <div className="w-8/12 md:w-7/12 lg:w-6/12 xl:w-3/12 2xl:w-3/12 pb-6 sm:pb-12 md:pr-0 pr-5 2xl:text-lg text-sm text-justify contentpage self-end">
             As a passionate software developer, I have a strong love for
             customisation. I love customising my websites, my environment, my
             keyboard, the list goes on.
