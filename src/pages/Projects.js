@@ -28,7 +28,7 @@ export default function Projects() {
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
-        link={"https://github.com/cthdarren/WayFare"}
+        link={"https://istd.sutd.edu.sg/term4-design-exhibition/50001/team11"}
         duration={"Apr 2024"}
         languages={
           <div className="flex justify-end">
