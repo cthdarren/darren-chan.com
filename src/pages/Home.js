@@ -3,11 +3,12 @@ function Home() {
         <div className="w-8/12 md:w-7/12 lg:w-6/12 xl:w-3/12 2xl:w-3/12 pb-6 sm:pb-12 md:pr-0 pr-5 2xl:text-lg text-sm text-justify contentpage self-end">
             As a passionate software developer, I have a strong love for
             customisation. I love customising my websites, my linux environment, my
-            keyboard, my shell, the list goes on.
+            keyboard, my shell, my neovim config, the list goes on.
+            You can see clear evidence of this in my <a href="https://github.com/cthdarren/dotfiles" target="_blank"><u>dotfiles.</u></a>
             <br />
             <br />Fueled by my naive interest in hacking because it was "cool", I took a
-            cybersecurity diploma in 2017, and that was when my programming journey began. 
-             <br />
+            cybersecurity diploma in 2017, and that was when my programming journey began.
+            <br />
             <br />
             As it turns out, hacking <i>is</i> pretty cool, but it just wasn't exactly what I was looking for. <br /> <br />
             Programming, on the other hand ...
