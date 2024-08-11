@@ -85,7 +85,7 @@ function App() {
                 </p>
             </div>
 
-            <div className="text-left absolute top-32 xl:top-40 2xl:top-44 md:px-16 px-5 z-50">
+            <div className="text-left absolute top-32 md:top-40 2xl:top-44 md:px-16 px-5 z-50">
                 <NavBar
                     pages={pages}
                     page={currPage}
