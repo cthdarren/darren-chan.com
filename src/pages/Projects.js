@@ -7,11 +7,27 @@ import {
   PythonIcon,
   ReactIcon,
   SpringbootIcon,
+  BootstrapIcon,
+  RubyIcon,
+  RailsIcon,
+  GCPIcon
 } from "../icons/icons.js";
 
 export default function Projects() {
   return (
     <div className="w-8/12 md:w-10/12 lg:w-10/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
+      <ProjectItem
+        title={"Ring of Reciprocity"}
+        projectType={"School"}
+        platform={"Web Application"}
+        link={"https://ror-rails-ndse76q2ja-as.a.run.app/"}
+        duration={"Aug 2024"}
+        languages={
+          <div className="flex justify-end">
+            <RubyIcon /> <RailsIcon /> <GCPIcon /> <BootstrapIcon />
+          </div>
+        }
+      />
       <ProjectItem
         title={"Portfolio"}
         projectType={"Personal"}
