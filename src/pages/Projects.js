@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ProjectItem from "../components/ProjectItem";
 import {
   CsharpIcon,
@@ -12,11 +13,19 @@ import {
   RailsIcon,
   GCPIcon
 } from "../icons/icons.js";
+import ProjectModal from "../components/ProjectModal.js";
 
 export default function Projects() {
+  const [projectModalOpen, setProjectModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <div className="w-8/12 md:w-10/12 lg:w-10/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
+    {projectModalOpen? (<>h</>): (<></>)}
+    <ProjectModal selectedProject={selectedProject}/>
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"Ring of Reciprocity"}
         projectType={"School"}
         platform={"Web Application"}
@@ -29,6 +38,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"Portfolio"}
         projectType={"Personal"}
         platform={"Web Application"}
@@ -41,6 +52,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
@@ -53,6 +66,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"WW Downloader"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -65,6 +80,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"AutoTemptaking"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -77,6 +94,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"HS Batch Downloader"}
         projectType={"Personal"}
         platform={"Tkinter Application"}
@@ -89,6 +108,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        setProjectModalOpen={setProjectModalOpen}
+        setSelectedProject={setSelectedProject}
         title={"InfiniteLodging"}
         projectType={"School"}
         platform={"Web Application"}
