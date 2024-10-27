@@ -5,8 +5,10 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
     <React.StrictMode>
+        <link rel="preload" href="index.css" as="style"/>
         <App />
     </React.StrictMode>,
 );
