@@ -21,8 +21,9 @@ export default function Projects() {
 
   return (
     <div className="w-8/12 md:w-10/12 lg:w-10/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
-    {projectModalOpen? (<>h</>): (<></>)}
-    <ProjectModal selectedProject={selectedProject}/>
+    {projectModalOpen? (
+        <ProjectModal selectedProject={selectedProject} setModalOpen={setProjectModalOpen}/>
+    ): (<></>)}
       <ProjectItem
         setProjectModalOpen={setProjectModalOpen}
         setSelectedProject={setSelectedProject}
