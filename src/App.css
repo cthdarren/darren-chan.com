@@ -264,6 +264,10 @@ body.dark #bottomBorder {
     transition: right 0.6s linear;
 }
 
+#projectMetaLanguage > div{
+    justify-content: flex-start !important;
+}
+
 .contentpage {
   animation: fade-in 0.6s;
 }

@@ -31,8 +31,8 @@ function ProjectItemInfo({
 }) {
     return (
             <>
-                <div id="projectMetaContainer" className="ml-1">
-                    <div className="flex justify-between mt-5 ">
+                <div id="projectMetaContainer" className="ml-1 [&>div]:mb-1">
+                    <div className="flex justify-between mt-6">
                         <div id="projectMetaPlatform">
                             <span className="">{selectedProject.platform} / {selectedProject.projectType} Project</span>
                         </div>
@@ -43,7 +43,10 @@ function ProjectItemInfo({
                     <div id="projectMetaDuration">
                         <span className="">{selectedProject.duration}</span>
                     </div>
-                    <div className="bg-white w-full h-[1px] my-2"></div>
+                    <div id="projectMetaLanguage">
+                        {selectedProject.languages}
+                    </div>
+                    <span className="bg-white w-full h-[1px] my-5 block"></span>
                 </div>
                 {getContent(selectedProject.id)}
             </>
