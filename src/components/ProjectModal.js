@@ -16,7 +16,7 @@ function ProjectModal({
         >
             <div className="mt-5 ml-16 pl-1 relative w-fit" onClick={() => closeProjectModal()}> 
                 <div className="relative underline cursor-pointer w-fit">
-                    <BackSvg className="absolute py-1.5 h-full inline-block" fill="white"/>
+                    <BackSvg className="absolute py-1.5 h-full inline-block" fill="currentColor"/>
                     <span className="pl-6">{"BACK"}</span>
                 </div>
             </div>
