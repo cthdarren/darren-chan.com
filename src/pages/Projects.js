@@ -38,7 +38,8 @@ function closeProjectModal(){
   return (
         <>
         <div className="w-full h-full overflow-scroll no-scrollbar absolute">
-    <div className={"w-8/12 md:w-9/12 lg:w-9/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col absolute " + (projectModalOpen?"right-[1400px]":"right-0")}>
+    <div className={"w-8/12 md:w-9/12 lg:w-9/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col absolute " + (projectModalOpen?"2xl:right-[1100px] xl:right-[950px] lg:right-[775px] md:right-[600px] sm:right-[520px] right-[130%]":"right-0")}>
+
       <ProjectItem
         openProjectModal={openProjectModal}
         id ={0}

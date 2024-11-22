@@ -32,7 +32,7 @@ function ProjectItemInfo({
     return (
             <>
                 <div id="projectMetaContainer" className="ml-1 [&>div]:mb-1">
-                    <div className="flex justify-between mt-6">
+                    <div className="lg:flex-row flex-col flex justify-between mt-6">
                         <div id="projectMetaPlatform">
                             <span className="">{selectedProject.platform} / {selectedProject.projectType} Project</span>
                         </div>
