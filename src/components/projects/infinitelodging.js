@@ -10,7 +10,7 @@ function InfiniteLodging() {
                 <br/>
             </div>
             <div id="project_reflect">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
                 <p>
                     The database was local, and everything else was hosted locally. However, it sparked my love for web development by how easy it was as well as the endless possibilities that lay before me.

@@ -46,7 +46,7 @@ function ProjectItemInfo({
                     <div id="projectMetaLanguage">
                         {selectedProject.languages}
                     </div>
-                    <span className="bg-white w-full h-[1px] my-5 block"></span>
+                    <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 </div>
                 {getContent(selectedProject.id)}
             </>

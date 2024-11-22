@@ -13,12 +13,12 @@ function Portfolio() {
                </p>
             </div>
             <div id="project_carousel">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Gallery</p>
             <GalleryCarousel picture_array={[port1, port2, port3]}/>
             </div>
             <div id="project_reflect">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
                 <p>This portfolio wasn't very technically challenging, but more of tedious as I had to input much of the content manually for each project. I suspect this would only be hard for the first time. </p>
                 <br/>

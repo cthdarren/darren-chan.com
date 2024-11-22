@@ -11,7 +11,7 @@ function WwDownloader() {
                 <p>The issue with this however, was that although you had all the content for free, you had to read it on the website and see all the ads, which was a tad bit annoying for me (I know i'm already reading it free can't really complain much). But I wanted to go one step further. Since the content is all already available, why not scrape all the content and parse it into a downloadable epub format? That way I could also read offline, a feature that was not present.</p>
             </div>
             <div id="project_reflect">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
                 <p>
                     Although an exceedingly simple project, this was one of my proudest ones, because it was one of my first actual useful product that I could see other people using. It thought me the basics of webscraping, inspecting URLs and parsing content into other formats like an epub. 

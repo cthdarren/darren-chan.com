@@ -21,12 +21,12 @@ function Wayfare() {
                </p>
             </div>
             <div id="project_carousel">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Gallery</p>
             <GalleryCarousel picture_array={[wayf1, wayf2, wayf3, wayf4, wayf5, wayf6, wayf7, wayf8, wayf9, wayf10]}/>
             </div>
             <div id="project_reflect">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
                 <p>
                     This project was exceptionally fun to work on. It was my first time building an Android application and using Java as well. Being able to run the application on my very own phone made the experience a very different one from traditional web development or simple tkinter python applications that I have made in the past.

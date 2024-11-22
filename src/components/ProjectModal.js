@@ -10,7 +10,7 @@ function ProjectModal({
         <div
             id="projectinfo"
             className={
-                "absolute text-left pr-16 h-full overflow-scroll no-scrollbar border-l-white border-white border-solid border-l " +
+                "absolute text-left pr-16 h-full overflow-scroll no-scrollbar bordergradientvertical border-solid border-l " +
                 (projectModalOpen ? "right-0" : "-right-[1400px]")
             }
         >

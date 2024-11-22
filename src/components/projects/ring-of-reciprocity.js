@@ -25,12 +25,12 @@ function RingOfReciprocity() {
                 </ol>
             </div>
             <div id="project_carousel">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Gallery</p>
             <GalleryCarousel picture_array={[ror3, ror4, ror2, ror1]}/>
             </div>
             <div id="project_reflect">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
                 <p> This project managed to introduce me to many firsts in my software developer journey. The biggest takeaway I got out of the application was most definitely integrating the Gemini LLM API into this. Although extremely simple, it allowed me to experience using an API for an LLM for the first time. 
                 </p>

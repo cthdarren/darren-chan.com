@@ -12,7 +12,7 @@ function HorribleSubs() {
                 <p>That was the precursor to this project: a simple tkinter gui to basically batch click all the magnet links for a series of your choosing, and you could select the range. </p>
             </div>
             <div id="project_reflect">
-                <span className="bg-white w-full h-[1px] my-5 block"></span>
+                <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
                 <p>
                     Yet another of my proudest projects, not because of complexity, but because of how useful it is, despite it's simplicity, as well as the fact that I did this relatively early on in my programming journey/career
