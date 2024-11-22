@@ -38,9 +38,10 @@ function closeProjectModal(){
   return (
         <>
         <div className="w-full h-full overflow-scroll no-scrollbar absolute">
-    <div className={"w-8/12 md:w-9/12 lg:w-9/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col absolute " + (projectModalOpen?"right-[1400px]":"right-16")}>
+    <div className={"w-8/12 md:w-9/12 lg:w-9/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col absolute " + (projectModalOpen?"right-[1400px]":"right-0")}>
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={0}
         title={"Ring of Reciprocity"}
         projectType={"School"}
         platform={"Web Application"}
@@ -54,6 +55,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={1}
         title={"Portfolio"}
         projectType={"Personal"}
         platform={"Web Application"}
@@ -67,6 +69,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={2}
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
@@ -80,6 +83,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={3}
         title={"WW Downloader"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -93,6 +97,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={4}
         title={"AutoTemptaking"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -106,6 +111,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={5}
         title={"HS Batch Downloader"}
         projectType={"Personal"}
         platform={"Tkinter Application"}
@@ -119,6 +125,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={6}
         title={"InfiniteLodging"}
         projectType={"School"}
         platform={"Web Application"}
@@ -134,7 +141,7 @@ function closeProjectModal(){
       </div>
     </div>
 
-    <ProjectModal closeProjectModal={closeProjectModal} projectModalOpen={projectModalOpen} selectedProject={selectedProject}/>
+        <ProjectModal closeProjectModal={closeProjectModal} projectModalOpen={projectModalOpen} selectedProject={selectedProject}/>
     </>
   );
 }

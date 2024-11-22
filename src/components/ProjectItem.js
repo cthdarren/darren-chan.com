@@ -1,5 +1,6 @@
-function ProjectItem({ title, link, duration, projectType, platform, languages, openProjectModal}) {
+function ProjectItem({ id, title, link, duration, projectType, platform, languages, openProjectModal}) {
     const project = {
+        id: id,
         title: title,
         link: link,
         duration: duration,
