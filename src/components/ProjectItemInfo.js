@@ -1,4 +1,5 @@
 import AutoTempTaking from "./projects/autotemptaking"
+import CliType from "./projects/clitype"
 import HorribleSubs from "./projects/horriblesubs"
 import InfiniteLodging from "./projects/infinitelodging"
 import Portfolio from "./projects/portfolio"
@@ -9,19 +10,21 @@ import WwDownloader from "./projects/ww-downloader"
 function getContent(projectId){
     switch(projectId){
         case 0:
-            return (<RingOfReciprocity/>)
+            return (<InfiniteLodging/>)
         case 1:
-            return (<Portfolio/>)
+            return (<HorribleSubs/>)
         case 2:
-            return (<Wayfare/>)
+            return (<WwDownloader/>)
         case 3:
             return (<AutoTempTaking/>)
         case 4:
-            return (<WwDownloader/>)
+            return (<Wayfare/>)
         case 5:
-            return (<HorribleSubs/>)
+            return (<Portfolio/>)
         case 6:
-            return (<InfiniteLodging/>)
+            return (<RingOfReciprocity/>)
+        case 7:
+            return (<CliType/>)
         default:
             return (<div>Invalid Project Id</div>)
     }
