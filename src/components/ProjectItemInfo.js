@@ -17,9 +17,9 @@ function getContent(projectId){
         case 3:
             return (<AutoTempTaking/>)
         case 4:
-            return (<HorribleSubs/>)
-        case 5:
             return (<WwDownloader/>)
+        case 5:
+            return (<HorribleSubs/>)
         case 6:
             return (<InfiniteLodging/>)
         default:

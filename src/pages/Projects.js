@@ -98,11 +98,11 @@ function closeProjectModal(){
       <ProjectItem
         openProjectModal={openProjectModal}
         id ={4}
-        title={"HS Batch Downloader"}
+        title={"WW Downloader"}
         projectType={"Personal"}
-        platform={"Tkinter Application"}
-        link={"https://github.com/cthdarren/horriblesubs-batch-downloader"}
-        duration={"Jul 2020"}
+        platform={"Python Script"}
+        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
+        duration={"Jan 2020"}
         languages={
           <div className="flex justify-end">
             <PythonIcon />
@@ -112,11 +112,11 @@ function closeProjectModal(){
       <ProjectItem
         openProjectModal={openProjectModal}
         id ={5}
-        title={"WW Downloader"}
+        title={"HS Batch Downloader"}
         projectType={"Personal"}
-        platform={"Python Script"}
-        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
-        duration={"Jan 2020"}
+        platform={"Tkinter Application"}
+        link={"https://github.com/cthdarren/horriblesubs-batch-downloader"}
+        duration={"Apr 2019"}
         languages={
           <div className="flex justify-end">
             <PythonIcon />
