@@ -1,10 +1,27 @@
-function ProjectModal({ selectedProject, setModalOpen}) {
-  return (
-    <div className="absolute z-[998] text-left bg-black p-16 top-0 right-16 h-full w-1/2">
-            <div className="absolute top-10 right-10 z-[999]" onClick={() => setModalOpen(false)}> close </div>
-            <div className="text-5xl">{selectedProject.title}</div>
+function ProjectModal({
+    selectedProject,
+    projectModalOpen,
+    closeProjectModal,
+}) {
+    return (
+        <div
+            id="projectinfo"
+            className={
+                "absolute text-left pr-16 h-full overflow-scroll no-scrollbar " +
+                (projectModalOpen ? "right-0" : "-right-[1300px]")
+            }
+        >
+            <div id="projmodalwrapper" className="border-l-white border-white border-solid border-l h-[2000px]">
+                <div onClick={() => closeProjectModal()}> BACK </div>
+                <div className="">
+                    {" "}
+                    {selectedProject == null
+                        ? "Project not selected"
+                        : selectedProject.title}
+                </div>
+            </div>
         </div>
-  );
+    );
 }
 
 export default ProjectModal;

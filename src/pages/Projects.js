@@ -15,18 +15,32 @@ import {
 } from "../icons/icons.js";
 import ProjectModal from "../components/ProjectModal.js";
 
+
 export default function Projects() {
   const [projectModalOpen, setProjectModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
+function openProjectModal(project){
+        document.getElementById("name").style.opacity = 0
+        document.getElementById("navbar").style.opacity = 0
+        document.getElementById("darkmode").children[0].style.opacity = 0
+        setProjectModalOpen(true) 
+        setSelectedProject(project)
+}
+
+function closeProjectModal(){
+        document.getElementById("name").style.opacity = 100 
+        document.getElementById("navbar").style.opacity = 100
+        document.getElementById("darkmode").children[0].style.opacity = 100
+        setProjectModalOpen(false) 
+    }
+
   return (
-    <div className="w-8/12 md:w-10/12 lg:w-10/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
-    {projectModalOpen? (
-        <ProjectModal selectedProject={selectedProject} setModalOpen={setProjectModalOpen}/>
-    ): (<></>)}
+        <>
+        <div className="w-full h-full overflow-scroll no-scrollbar absolute">
+    <div className={"w-8/12 md:w-9/12 lg:w-9/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col absolute " + (projectModalOpen?"right-[1400px]":"right-16")}>
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"Ring of Reciprocity"}
         projectType={"School"}
         platform={"Web Application"}
@@ -39,8 +53,7 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"Portfolio"}
         projectType={"Personal"}
         platform={"Web Application"}
@@ -53,8 +66,7 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
@@ -67,8 +79,7 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"WW Downloader"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -81,8 +92,7 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"AutoTemptaking"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -95,8 +105,7 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"HS Batch Downloader"}
         projectType={"Personal"}
         platform={"Tkinter Application"}
@@ -109,8 +118,7 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        setProjectModalOpen={setProjectModalOpen}
-        setSelectedProject={setSelectedProject}
+        openProjectModal={openProjectModal}
         title={"InfiniteLodging"}
         projectType={"School"}
         platform={"Web Application"}
@@ -123,6 +131,10 @@ export default function Projects() {
         }
       />
       <div className="p-1 md:p-5"></div>
+      </div>
     </div>
+
+    <ProjectModal closeProjectModal={closeProjectModal} projectModalOpen={projectModalOpen} selectedProject={selectedProject}/>
+    </>
   );
 }

@@ -94,7 +94,7 @@ function App() {
             </div>
             <div className="nav-item rotate-[270deg] md:rotate-0 bottom-28 -left-5 md:bottom-24 md:left-16 z-[200] text-xs xl:text-sm 2xl:text-base absolute">
                 <span
-                    id=""
+                    id="darkmode"
                     className="darkmode navbaritem cursor-pointer"
                     onClick={() => toggleTheme()}
                 >
