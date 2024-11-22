@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ProjectItem from "../components/ProjectItem";
 import {
   CsharpIcon,
@@ -13,11 +14,36 @@ import {
   GCPIcon,
   GoIcon
 } from "../icons/icons.js";
+import ProjectModal from "../components/ProjectModal.js";
+
 
 export default function Projects() {
+  const [projectModalOpen, setProjectModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+function openProjectModal(project){
+        document.getElementById("name").style.opacity = 0
+        document.getElementById("navbar").style.opacity = 0
+        document.getElementById("darkmode").children[0].style.opacity = 0
+        setProjectModalOpen(true) 
+        setSelectedProject(project)
+}
+
+function closeProjectModal(){
+        document.getElementById("name").style.opacity = 100 
+        document.getElementById("navbar").style.opacity = 100
+        document.getElementById("darkmode").children[0].style.opacity = 100
+        setProjectModalOpen(false) 
+    }
+
   return (
-    <div className="w-8/12 md:w-10/12 lg:w-10/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
+        <>
+        <div className="w-full h-full overflow-scroll no-scrollbar absolute">
+    <div className={"w-8/12 md:w-9/12 lg:w-9/12 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col absolute " + (projectModalOpen?"2xl:right-[1100px] xl:right-[950px] lg:right-[775px] md:right-[600px] sm:right-[520px] right-[130%]":"right-0")}>
+
       <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={7}
         title={"CLI Type"}
         projectType={"Personal"}
         platform={"Console Application"}
@@ -30,6 +56,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        openProjectModal={openProjectModal}
+        id={6}
         title={"Ring of Reciprocity"}
         projectType={"School"}
         platform={"Web Application"}
@@ -42,6 +70,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={5}
         title={"Portfolio"}
         projectType={"Personal"}
         platform={"Web Application"}
@@ -54,6 +84,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={4}
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
@@ -66,18 +98,8 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        title={"WW Downloader"}
-        projectType={"Personal"}
-        platform={"Python Script"}
-        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
-        duration={"Jul 2022"}
-        languages={
-          <div className="flex justify-end">
-            <PythonIcon />
-          </div>
-        }
-      />
-      <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={3}
         title={"AutoTemptaking"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -90,11 +112,13 @@ export default function Projects() {
         }
       />
       <ProjectItem
-        title={"HS Batch Downloader"}
+        openProjectModal={openProjectModal}
+        id ={2}
+        title={"WW Downloader"}
         projectType={"Personal"}
-        platform={"Tkinter Application"}
-        link={"https://github.com/cthdarren/horriblesubs-batch-downloader"}
-        duration={"Jul 2020"}
+        platform={"Python Script"}
+        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
+        duration={"Jan 2020"}
         languages={
           <div className="flex justify-end">
             <PythonIcon />
@@ -102,6 +126,22 @@ export default function Projects() {
         }
       />
       <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={1}
+        title={"HS Batch Downloader"}
+        projectType={"Personal"}
+        platform={"Tkinter Application"}
+        link={"https://github.com/cthdarren/horriblesubs-batch-downloader"}
+        duration={"Apr 2019"}
+        languages={
+          <div className="flex justify-end">
+            <PythonIcon />
+          </div>
+        }
+      />
+      <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={0}
         title={"InfiniteLodging"}
         projectType={"School"}
         platform={"Web Application"}
@@ -114,6 +154,10 @@ export default function Projects() {
         }
       />
       <div className="p-1 md:p-5"></div>
+      </div>
     </div>
+
+        <ProjectModal closeProjectModal={closeProjectModal} projectModalOpen={projectModalOpen} selectedProject={selectedProject}/>
+    </>
   );
 }

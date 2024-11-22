@@ -240,6 +240,10 @@ body.dark #bottomBorder {
   animation: fade-in 0.5s forwards;
 }
 
+#name, #navbar, #darkmode, .navbaritem.darkmode div{
+    transition: opacity 0.3s linear;
+}
+
 #footer > p > span {
   opacity: 0;
   animation: fade-in 0.5s forwards;
@@ -250,6 +254,68 @@ body.dark #bottomBorder {
   opacity: 0;
   animation: fade-in 0.5s forwards;
   animation-delay: 1.7s;
+}
+
+#projectinfo {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    #projectinfo {
+        width: 420px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #projectinfo {
+        width: 500px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #projectinfo {
+        width: 675px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    #projectinfo {
+        width: 850px;
+    }
+
+}
+
+@media (min-width: 1536px) {
+    #projectinfo {
+        width: 1000px;
+    }
+}
+
+#projectinfo, .contentpage {
+    transition: right 0.4s linear;
+}
+
+#projectMetaLanguage > div{
+    justify-content: flex-start !important;
+}
+
+body.dark .bordergradientvertical{
+    border-image: linear-gradient(to bottom, #111111 5%, #444 10% , #444 90% , #111111 95%) 1;
+}
+
+.bordergradientvertical{
+    border-image: linear-gradient(to bottom, #fff 5%, #ccc 10% , #ccc 90% , #fff 95%) 1;
+}
+
+body.dark .bggradienthorizontal{
+    background-image: linear-gradient(to right, #111 0%, #444 10% , #444 90% , #111 100%);
+}
+
+.bggradienthorizontal{
+    background-image: linear-gradient(to right, #fff 0%, #ccc 10% , #ccc 90% , #fff 100%);
 }
 
 .contentpage {
