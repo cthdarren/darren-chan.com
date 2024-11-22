@@ -8,7 +8,7 @@ function ProjectItem({ title, link, duration, projectType, platform, languages, 
         languages: languages
     }
   return (
-    <div className="flex md:flex-row  flex-col-reverse justify-end py-5" onClick={() => {openProjectModal(project)}}>
+    <div className="flex md:flex-row  flex-col-reverse justify-end py-5 biglink" onClick={() => {openProjectModal(project)}}>
         <div className="flex md:mr-8 flex-col-reverse md:flex-col">
           <div className="-mr-2 pt-2">{languages}</div>
           <div className="grow md:self-end text-right flex items-end justify-end">
