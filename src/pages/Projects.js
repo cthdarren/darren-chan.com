@@ -11,7 +11,8 @@ import {
   BootstrapIcon,
   RubyIcon,
   RailsIcon,
-  GCPIcon
+  GCPIcon,
+  GoIcon
 } from "../icons/icons.js";
 import ProjectModal from "../components/ProjectModal.js";
 
@@ -42,7 +43,21 @@ function closeProjectModal(){
 
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={0}
+        id ={7}
+        title={"CLI Type"}
+        projectType={"Personal"}
+        platform={"Console Application"}
+        link={"https://github.com/cthdarren/cli-type/"}
+        duration={"Oct 2024"}
+        languages={
+          <div className="flex justify-end">
+            <GoIcon/>
+          </div>
+        }
+      />
+      <ProjectItem
+        openProjectModal={openProjectModal}
+        id={6}
         title={"Ring of Reciprocity"}
         projectType={"School"}
         platform={"Web Application"}
@@ -56,7 +71,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={1}
+        id ={5}
         title={"Portfolio"}
         projectType={"Personal"}
         platform={"Web Application"}
@@ -70,7 +85,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={2}
+        id ={4}
         title={"WayFare"}
         projectType={"School"}
         platform={"Android Application"}
@@ -98,7 +113,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={4}
+        id ={2}
         title={"WW Downloader"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -112,7 +127,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={5}
+        id ={1}
         title={"HS Batch Downloader"}
         projectType={"Personal"}
         platform={"Tkinter Application"}
@@ -126,7 +141,7 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={6}
+        id ={0}
         title={"InfiniteLodging"}
         projectType={"School"}
         platform={"Web Application"}
