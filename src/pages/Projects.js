@@ -84,20 +84,6 @@ function closeProjectModal(){
       <ProjectItem
         openProjectModal={openProjectModal}
         id ={3}
-        title={"WW Downloader"}
-        projectType={"Personal"}
-        platform={"Python Script"}
-        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
-        duration={"Jul 2022"}
-        languages={
-          <div className="flex justify-end">
-            <PythonIcon />
-          </div>
-        }
-      />
-      <ProjectItem
-        openProjectModal={openProjectModal}
-        id ={4}
         title={"AutoTemptaking"}
         projectType={"Personal"}
         platform={"Python Script"}
@@ -111,12 +97,26 @@ function closeProjectModal(){
       />
       <ProjectItem
         openProjectModal={openProjectModal}
-        id ={5}
+        id ={4}
         title={"HS Batch Downloader"}
         projectType={"Personal"}
         platform={"Tkinter Application"}
         link={"https://github.com/cthdarren/horriblesubs-batch-downloader"}
         duration={"Jul 2020"}
+        languages={
+          <div className="flex justify-end">
+            <PythonIcon />
+          </div>
+        }
+      />
+      <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={5}
+        title={"WW Downloader"}
+        projectType={"Personal"}
+        platform={"Python Script"}
+        link={"https://github.com/cthdarren/wuxiaworld.co-downloader"}
+        duration={"Jan 2020"}
         languages={
           <div className="flex justify-end">
             <PythonIcon />

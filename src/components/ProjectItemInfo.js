@@ -15,11 +15,11 @@ function getContent(projectId){
         case 2:
             return (<Wayfare/>)
         case 3:
-            return (<WwDownloader/>)
-        case 4:
             return (<AutoTempTaking/>)
-        case 5:
+        case 4:
             return (<HorribleSubs/>)
+        case 5:
+            return (<WwDownloader/>)
         case 6:
             return (<InfiniteLodging/>)
         default:
