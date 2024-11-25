@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("../assets/fonts/AnonymousPro-Regular.ttf");
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("../assets/fonts/AnonymousPro-Bold.ttf");
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("../assets/fonts/AnonymousPro-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("../assets/fonts/AnonymousPro-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-BlackItalic.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-Black.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-Bold.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-Medium.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-MediumItalic.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-LightItalic.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-Light.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-ThinItalic.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-Thin.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-Regular.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src:
+    url("../assets/fonts/BrandonGrotesque-RegularItalic.woff2") format("woff2"),
+    url("../assets/fonts/BrandonGrotesque-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  /* font-display: swap; */
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('../assets/fonts/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../assets/fonts/BebasNeue-Thin.woff2') format('woff2'),
+        url('../assets/fonts/BebasNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../assets/fonts/BebasNeue-Light.woff2') format('woff2'),
+        url('../assets/fonts/BebasNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../assets/fonts/BebasNeue-Bold.woff2') format('woff2'),
+        url('../assets/fonts/BebasNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+body {
+  font-family:
+    "Brandon Grotesque",
+    "Bebas Neue",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    sans-serif !important;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace !important;
+}
