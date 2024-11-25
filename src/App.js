@@ -13,7 +13,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(true);
     const [timeoutId, setTimeoutId] = useState(null);
 
-    const pages = ["Home", "Experience", "Projects", "Info"];
+    const pages = ["Home", "Experience", "Projects", "Contact"];
 
     useEffect(() => {
         setTimeout(() => {
