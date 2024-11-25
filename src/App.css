@@ -174,7 +174,7 @@ body.dark #bottomBorder {
 
 .navbaritem.darkmode {
   opacity: 0;
-  font-family: "Anonymous Pro", "monospaced";
+  font-family: "Anonymous Pro", monospace;
   animation: fade-in 0.5s forwards;
   animation-delay: 1.7s;
 }
