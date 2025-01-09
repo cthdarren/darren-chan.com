@@ -12,7 +12,8 @@ import {
   RubyIcon,
   RailsIcon,
   GCPIcon,
-  GoIcon
+  GoIcon,
+  TailwindIcon
 } from "../icons/icons.js";
 import ProjectModal from "../components/ProjectModal.js";
 
@@ -51,7 +52,7 @@ function closeProjectModal(){
         duration={"Jan 2025"}
         languages={
           <div className="flex justify-end">
-            <GoIcon/>
+            <ReactIcon/> <JavascriptIcon/> <TailwindIcon/>
           </div>
         }
       />

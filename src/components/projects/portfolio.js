@@ -26,6 +26,9 @@ function Portfolio() {
                     I managed to brush up on css and managed to create many components from pure css without installing any dependecies aside from React. This was additionally deployed to my domain through DigitalOcean using GitHub Education credits.
                 </p>
                 <br/>
+                <p>
+                    I could have put all projects into a json file for easier managing of data. Maybe a future update?
+                </p>
             </div>
         </>
     );

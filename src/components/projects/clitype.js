@@ -11,6 +11,8 @@ function CliType() {
                 <p>
                 Have a typing test at your fingertips with CLI Type!, allowing you to choose between multiple modes of typing and different variety of word lists to choose from. 
 </p>
+                <br/>
+                <p>This application served as my introduction to Go</p>
             </div>
             <div id="project_carousel">
                 <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
@@ -20,6 +22,8 @@ function CliType() {
             <div id="project_reflect">
                 <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Reflections</p>
+                <p>The concept of goroutines were very interesting to me and was one of the more memorable things I learned from this project.</p>
+                <br/>
                 <p>
                     Manipulating the terminal is quite challenging. Many more factors like having to manage the users cursor and keeping track of how many lines each output will produce will make it much more complex as compared to web development. 
                 </p>

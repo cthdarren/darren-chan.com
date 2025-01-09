@@ -6,6 +6,7 @@ import Portfolio from "./projects/portfolio"
 import RingOfReciprocity from "./projects/ring-of-reciprocity"
 import Wayfare from "./projects/wayfare"
 import WwDownloader from "./projects/ww-downloader"
+import Splitway from "./projects/splitway"
 
 function getContent(projectId){
     switch(projectId){
@@ -25,6 +26,8 @@ function getContent(projectId){
             return (<RingOfReciprocity/>)
         case 7:
             return (<CliType/>)
+        case 8:
+            return (<Splitway/>)
         default:
             return (<div>Invalid Project Id</div>)
     }
