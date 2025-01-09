@@ -43,6 +43,20 @@ function closeProjectModal(){
 
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={8}
+        title={"Splitway"}
+        projectType={"Personal"}
+        platform={"Mobile Application"}
+        link={"https://github.com/cthdarren/Splitway/"}
+        duration={"Jan 2025"}
+        languages={
+          <div className="flex justify-end">
+            <GoIcon/>
+          </div>
+        }
+      />
+      <ProjectItem
+        openProjectModal={openProjectModal}
         id ={7}
         title={"CLI Type"}
         projectType={"Personal"}
