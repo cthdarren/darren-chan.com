@@ -42,20 +42,22 @@ export default function WorkExperience() {
           description={
             <div>
               <p>
+                {">"} Regular use of MQTT, Redis, K8s and Helm, with a focus on serving real-time, live data to the user
+              </p>
+              <p>
+                {">"} Piloted an auditing service to be used through keycloak roles
+              </p>
+              <p>
+                {">"} Refactoring of many services for future scalability
+              </p>
+              <p>
                 {">"} Rewrote Streamlit library to support Redis caching to optimise internal reports portal 
-              </p>
-              <p>
-                {">"} Regularly deployed services to clients using K8s, Helm 
-              </p>
-              <p>
-                {">"} Refactored many services to utilise remote caching for scalability
               </p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{" "}
-              <SqlIcon /> <TypescriptIcon /> <BootstrapIcon />
+              <PythonIcon/> <ReactIcon /> <TypescriptIcon />
             </div>
           }
         />

@@ -9,16 +9,10 @@ function Home() {
             Currently, I am:
             <ol className="list-disc list-outside ml-5">
                 <li>
-                    Studying Computer Science at SUTD 
+                    Interning at <a href="https://ventitech.ai/" target="_blank" rel="noreferrer">Venti Technologies</a>, a leading autonomous vehicle startup with a focus in supply chain
                 </li>
                 <li>
-                    working on <a href="https://github.com/cthdarren/cli-type" target="_blank" rel="noreferrer"><u>cli-type</u></a>, a typing test at your fingertips, in your terminal. <br />
-                </li>
-                <li>
-                    writing an alternative Text-based User Interface for the Youtube Music client, <a rel="noreferrer" href="https://github.com/cthdarren/ytmusic-tui" target="_blank"><u>ytmusic-tui</u></a>
-                </li>
-                <li>
-                    developing <a href="https://github.com/cthdarren/Splitway" target="_blank" rel="noreferrer"><u>Splitway</u></a>. a bill splitting app to streamline expense management between groups and friends, making it easier to track and settle shared costs.
+                    Setting up my home server with services like immich and others
                 </li>
             </ol>
         </div>
