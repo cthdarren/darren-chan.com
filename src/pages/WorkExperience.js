@@ -36,6 +36,30 @@ export default function WorkExperience() {
 
       <div>
         <WorkExpCard
+          title={"Venti Technologies"}
+          role="Full Stack Software Engineer Intern"
+          duration="Feb 2025 - Sep 2025"
+          description={
+            <div>
+              <p>
+                {">"} Rewrote Streamlit library to support Redis caching to optimise internal reports portal 
+              </p>
+              <p>
+                {">"} Regularly deployed services to clients using K8s, Helm 
+              </p>
+              <p>
+                {">"} Refactored many services to utilise remote caching for scalability
+              </p>
+            </div>
+          }
+          languages={
+            <div className="flex justify-end flex-wrap">
+              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{" "}
+              <SqlIcon /> <TypescriptIcon /> <BootstrapIcon />
+            </div>
+          }
+        />
+        <WorkExpCard
           title={"CSIntelligence"}
           role="Junior SOC Analyst"
           duration="Feb 2020 - Jun 2020"
