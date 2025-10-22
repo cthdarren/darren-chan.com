@@ -328,33 +328,35 @@ body.dark .bggradienthorizontal{
 
 @keyframes startuptop {
   0% {
-    width: calc(100% -8rem);
+    width: 0%;
     right: 50%;
     left: 50%;
+    top: 50%;
   }
   50% {
-    width: calc(100% -8rem);
+    width: (100% - 8rem);
     left: 4rem;
     right: 4rem;
     top: 50%;
   }
-  100% {
+  100% { 
     top: 4rem;
     left: 4rem;
     right: 4rem;
-    width: calc(100% -8rem);
+    width: calc(100% - 8rem);
     border-color: #e5e7eb;
   }
 }
 
 @keyframes startupbtm {
   0% {
-    width: calc(100%-8rem);
-    left: 50%;
+    width: 0%;
     right: 50%;
+    left: 50%;
+    top: 50%;
   }
   50% {
-    width: calc(100%-8rem);
+    width: calc(100% - 8rem);
     left: 4rem;
     right: 4rem;
     bottom: 50%;
@@ -364,17 +366,18 @@ body.dark .bggradienthorizontal{
     left: 4rem;
     right: 4rem;
     border-color: #e5e7eb;
-    width: calc(100%-8rem);
+    width: calc(100% - 8rem);
   }
 }
 @keyframes startuptopdark {
   0% {
-    width: calc(100% -8rem);
+    width: 0%;
     right: 50%;
     left: 50%;
+    top: 50%;
   }
   50% {
-    width: calc(100% -8rem);
+    width: calc(100% - 8rem);
     left: 4rem;
     right: 4rem;
     top: 50%;
@@ -383,19 +386,20 @@ body.dark .bggradienthorizontal{
     top: 4rem;
     left: 4rem;
     right: 4rem;
-    width: calc(100% -8rem);
+    width: calc(100% - 8rem);
     border-color: #333;
   }
 }
 
 @keyframes startupbtmdark {
   0% {
-    width: calc(100%-8rem);
-    left: 50%;
+    width: 0%;
     right: 50%;
+    left: 50%;
+    top: 50%;
   }
   50% {
-    width: calc(100%-8rem);
+    width: calc(100% - 8rem);
     left: 4rem;
     right: 4rem;
     bottom: 50%;
@@ -405,15 +409,16 @@ body.dark .bggradienthorizontal{
     left: 4rem;
     right: 4rem;
     border-color: #333;
-    width: calc(100%-8rem);
+    width: calc(100% - 8rem);
   }
 }
 
 @keyframes startuptopmobile {
   0% {
-    width: calc(100%-2.5rem);
+    width: 0%;
     right: 50%;
     left: 50%;
+    top: 50%;
   }
   50% {
     width: calc(100%-2.5rem);
@@ -474,9 +479,10 @@ body.dark .bggradienthorizontal{
 
 @keyframes startupbtmmobiledark {
   0% {
-    width: calc(100%-2.5rem);
-    left: 50%;
+    width: 0%;
     right: 50%;
+    left: 50%;
+    top: 50%;
   }
   50% {
     width: calc(100%-2.5rem);
