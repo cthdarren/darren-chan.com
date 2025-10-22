@@ -42,16 +42,16 @@ export default function WorkExperience() {
           description={
             <div>
               <p>
-                {} Transformed realtime in-production services into horizontally scalable systems using workers, Redis, and RabbitMQ.
+                {"•"} Transformed realtime in-production services into horizontally scalable systems using workers, Redis, and RabbitMQ.
               </p>
               <p>
-                {} Built, deployed and shipped a horizontally scalable, standalone auditing microservice to customers.
+                {"•"} Built, deployed and shipped a horizontally scalable, standalone auditing microservice to customers.
               </p>
               <p>
-                {} Developed a custom Streamlit fork to integrate Redis-based caching, optimising data load times and server load.
+                {"•"} Developed a custom Streamlit fork to integrate Redis-based caching, optimising data load times and server load.
               </p>
               <p>
-                {} Full-stack development using Python (FastAPI) and React, regular deployments with k8s and Helm.
+                {"•"} Full-stack development using Python (FastAPI) and React, regular deployments with k8s and Helm.
               </p>
             </div>
           }
@@ -68,18 +68,18 @@ export default function WorkExperience() {
           description={
             <div>
               <p>
-                {} Performed daily threat hunts to find any malicous activity
+                {"•"} Performed daily threat hunts to find any malicous activity
                 that passed the checks of the IDS SaaS.
               </p>
               <p>
-                {} Maintained internal applications and scripts used to speed
+                {"•"} Maintained internal applications and scripts used to speed
                 up workflows.
               </p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{}
+              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{"•"}
               <SqlIcon /> <TypescriptIcon /> <BootstrapIcon />
             </div>
           }
@@ -91,17 +91,17 @@ export default function WorkExperience() {
           description={
             <div>
               <p>
-                {} Created full-stack internal applications for employees.
+                {"•"} Created full-stack internal applications for employees.
               </p>
               <p>
-                {} Reverse engineered external API for SaaS and created a
+                {"•"} Reverse engineered external API for SaaS and created a
                 nicer UI for the SOC team to improve workflows.
               </p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{}
+              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{"•"}
               <SqlIcon /> <TypescriptIcon /> <BootstrapIcon />
             </div>
           }
@@ -112,13 +112,13 @@ export default function WorkExperience() {
           duration="Sep 2018 - Oct 2018"
           description={
             <div>
-              <p>{} Converted designs into live, interactive pages.</p>
-              <p>{} Automated environment setup with docker.</p>
+              <p>{"•"} Converted designs into live, interactive pages.</p>
+              <p>{"•"} Automated environment setup with docker.</p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <HtmlIcon /> <CssIcon /> <JavascriptIcon /> <BootstrapIcon />{}
+              <HtmlIcon /> <CssIcon /> <JavascriptIcon /> <BootstrapIcon />{"•"}
               <DockerIcon />
             </div>
           }

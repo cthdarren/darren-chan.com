@@ -418,13 +418,13 @@ body.dark .bggradienthorizontal{
     width: 0%;
     right: 50%;
     left: 50%;
-    top: 50%;
+    top: 55%;
   }
   50% {
     width: calc(100%-2.5rem);
     left: 1.25rem;
     right: 1.25rem;
-    top: 50%;
+    top: 55%;
   }
   100% {
     top: 3.5rem;
@@ -440,12 +440,13 @@ body.dark .bggradienthorizontal{
     width: calc(100%-2.5rem);
     left: 50%;
     right: 50%;
+    top: 55%;
   }
   50% {
     width: calc(100%-2.5rem);
     left: 1.25rem;
     right: 1.25rem;
-    bottom: 50%;
+    top: 55%;
   }
   100% {
     bottom: 3.5rem;
@@ -460,13 +461,13 @@ body.dark .bggradienthorizontal{
   0% {
     width: calc(100%-2.5rem);
     right: 50%;
-    left: 50%;
+    top: 55%;
   }
   50% {
     width: calc(100%-2.5rem);
     left: 1.25rem;
     right: 1.25rem;
-    top: 50%;
+    top: 55%;
   }
   100% {
     top: 3.5rem;
@@ -482,13 +483,13 @@ body.dark .bggradienthorizontal{
     width: 0%;
     right: 50%;
     left: 50%;
-    top: 50%;
+    top: 55%;
   }
   50% {
     width: calc(100%-2.5rem);
     left: 1.25rem;
     right: 1.25rem;
-    bottom: 50%;
+    top: 55%;
   }
   100% {
     bottom: 3.5rem;
