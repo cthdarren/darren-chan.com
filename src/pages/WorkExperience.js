@@ -16,17 +16,17 @@ import {
 export default function WorkExperience() {
   return (
     // svg adapted from https://safetpojskic.com/
-    <div className="w-8/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-5/12 2xl:w-5/12 pb-10 md:px-0 px-5 xl:text-base text-xs text-right contentpage sm:pt-36 pt-64 flex flex-col">
+    <div className="w-8/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-5/12 2xl:w-5/12 pb-10 md:px-0 px-5 xl:text-base text-xs text-left contentpage sm:pt-36 pt-64 flex flex-col">
       <div id="treething" class="absolute -ml-16 lg:-ml-20 2xl:-ml-32 mt-10">
         <svg
-          viewBox="0 50 20 889"
+          viewBox="0 0 20 1400"
           width="20"
-          height="889"
+          height="1400"
           class=" ml-4 block"
           aria-hidden="true"
         >
           <path
-            d="M 1 0V -36 l 18 24 V 711.2 l -18 24V 889"
+            d="M 1 0V -36 l 18 24 V 1131.2 l -18 24V 1300"
             fill="none"
             stroke="#9091A0"
             stroke-opacity="0.36"
@@ -38,20 +38,20 @@ export default function WorkExperience() {
         <WorkExpCard
           title={"Venti Technologies"}
           role="Full Stack Software Engineer Intern"
-          duration="Feb 2025 - Sep 2025"
+          duration="Feb 2025 - Nov 2025"
           description={
             <div>
               <p>
-                {">"} Regular use of MQTT, Redis, K8s and Helm, with a focus on serving real-time, live data to the user
+                {} Transformed realtime in-production services into horizontally scalable systems using workers, Redis, and RabbitMQ.
               </p>
               <p>
-                {">"} Piloted an auditing service to be used through keycloak roles
+                {} Built, deployed and shipped a horizontally scalable, standalone auditing microservice to customers.
               </p>
               <p>
-                {">"} Refactoring of many services for future scalability
+                {} Developed a custom Streamlit fork to integrate Redis-based caching, optimising data load times and server load.
               </p>
               <p>
-                {">"} Rewrote Streamlit library to support Redis caching to optimise internal reports portal 
+                {} Full-stack development using Python (FastAPI) and React, regular deployments with k8s and Helm.
               </p>
             </div>
           }
@@ -68,18 +68,18 @@ export default function WorkExperience() {
           description={
             <div>
               <p>
-                {">"} Performed daily threat hunts to find any malicous activity
+                {} Performed daily threat hunts to find any malicous activity
                 that passed the checks of the IDS SaaS.
               </p>
               <p>
-                {">"} Maintained internal applications and scripts used to speed
+                {} Maintained internal applications and scripts used to speed
                 up workflows.
               </p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{" "}
+              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{}
               <SqlIcon /> <TypescriptIcon /> <BootstrapIcon />
             </div>
           }
@@ -91,17 +91,17 @@ export default function WorkExperience() {
           description={
             <div>
               <p>
-                {">"} Created full-stack internal applications for employees.
+                {} Created full-stack internal applications for employees.
               </p>
               <p>
-                {">"} Reverse engineered external API for SaaS and created a
+                {} Reverse engineered external API for SaaS and created a
                 nicer UI for the SOC team to improve workflows.
               </p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{" "}
+              <CsharpIcon /> <DotnetCoreIcon /> <PythonIcon /> <ReactIcon />{}
               <SqlIcon /> <TypescriptIcon /> <BootstrapIcon />
             </div>
           }
@@ -112,13 +112,13 @@ export default function WorkExperience() {
           duration="Sep 2018 - Oct 2018"
           description={
             <div>
-              <p>{">"} Converted designs into live, interactive pages.</p>
-              <p>{">"} Automated environment setup with docker.</p>
+              <p>{} Converted designs into live, interactive pages.</p>
+              <p>{} Automated environment setup with docker.</p>
             </div>
           }
           languages={
             <div className="flex justify-end flex-wrap">
-              <HtmlIcon /> <CssIcon /> <JavascriptIcon /> <BootstrapIcon />{" "}
+              <HtmlIcon /> <CssIcon /> <JavascriptIcon /> <BootstrapIcon />{}
               <DockerIcon />
             </div>
           }
