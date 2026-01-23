@@ -44,6 +44,38 @@ function closeProjectModal(){
 
       <ProjectItem
         openProjectModal={openProjectModal}
+        id ={10}
+        title={"Until We Wake"}
+        projectType={"School"}
+        platform={"2D Action Platformer Game"}
+        link={"https://github.com/cthdarren/UntilWeWake/"}
+        duration={"Nov 2026"}
+        languages={
+          <div className="flex justify-end">
+            <CsharpIcon/> { 
+                        // for when i import it <UnityIcon/>
+                }
+          </div>
+        }
+      />
+      <ProjectItem
+        openProjectModal={openProjectModal}
+        id ={9}
+        title={"A Death Worthy For Honor"}
+        projectType={"School"}
+        platform={"2D Rougelite Action Platformer Game"}
+        link={"https://github.com/cthdarren/deathworthyforhonor/"}
+        duration={"Oct 2026"}
+        languages={
+          <div className="flex justify-end">
+            <CsharpIcon/> { 
+                        // for when i import it <UnityIcon/>
+                }
+          </div>
+        }
+      />
+      <ProjectItem
+        openProjectModal={openProjectModal}
         id ={8}
         title={"Splitway"}
         projectType={"Personal"}

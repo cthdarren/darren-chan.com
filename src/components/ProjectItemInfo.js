@@ -7,6 +7,8 @@ import RingOfReciprocity from "./projects/ring-of-reciprocity"
 import Wayfare from "./projects/wayfare"
 import WwDownloader from "./projects/ww-downloader"
 import Splitway from "./projects/splitway"
+import UntilWeWake from "./projects/untilwewake"
+import DeathWorthyForHonor from "./projects/death-worthy-for-honor"
 
 function getContent(projectId){
     switch(projectId){
@@ -28,6 +30,10 @@ function getContent(projectId){
             return (<CliType/>)
         case 8:
             return (<Splitway/>)
+        case 9:
+            return (<DeathWorthyForHonor/>)
+        case 10:
+            return (<UntilWeWake/>)
         default:
             return (<div>Invalid Project Id</div>)
     }
