@@ -48,7 +48,7 @@ function closeProjectModal(){
         title={"Until We Wake"}
         projectType={"School"}
         platform={"2D Action Platformer Game"}
-        link={"https://github.com/cthdarren/UntilWeWake/"}
+        link={"https://youtu.be/259tOFBKMgs"}
         duration={"Nov 2026"}
         languages={
           <div className="flex justify-end">
@@ -64,7 +64,7 @@ function closeProjectModal(){
         title={"A Death Worthy For Honor"}
         projectType={"School"}
         platform={"2D Rougelite Action Platformer Game"}
-        link={"https://github.com/cthdarren/deathworthyforhonor/"}
+        link={"https://youtu.be/IH6_wPAlyqs"}
         duration={"Oct 2026"}
         languages={
           <div className="flex justify-end">

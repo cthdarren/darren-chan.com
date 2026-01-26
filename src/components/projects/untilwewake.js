@@ -1,15 +1,11 @@
 import GalleryCarousel from "../GalleryCarousel";
 
-// import uww1 from "../../assets/pictures/uww1.png"
-// import uww2 from "../../assets/pictures/uww2.png"
-// import uww3 from "../../assets/pictures/uww3.png"
-// import uww4 from "../../assets/pictures/uww4.png"
-// import uww5 from "../../assets/pictures/uww5.png"
-// import uww6 from "../../assets/pictures/uww6.png"
-// import uww7 from "../../assets/pictures/uww7.png"
-// import uww8 from "../../assets/pictures/uww8.png"
-// import uww9 from "../../assets/pictures/uww9.png"
-// import uww10 from "../../assets/pictures/uww10.png"
+import uww1 from "../../assets/pictures/uww1.png"
+import uww2 from "../../assets/pictures/uww2.png"
+import uww3 from "../../assets/pictures/uww3.png"
+import uww4 from "../../assets/pictures/uww4.png"
+import uww5 from "../../assets/pictures/uww5.png"
+import uww6 from "../../assets/pictures/uww6.png"
 
 function UntilWeWake() {
     return (
@@ -21,21 +17,43 @@ function UntilWeWake() {
                </p>
                 <br/>
                 <p>
-                    This project was part of the course 50.033 Game Design &amp; Development. Another special thanks to Professor <a href="natalieaguswebsite.com"><u>Natalie Agus</u></a> for her passionate teaching, patience in answering questions and love that she gave all her students throughout this course
+                    This project was part of the course 50.033 Game Design &amp; Development. Another special thanks to Professor <a href="https://www.sutd.edu.sg/profile/natalie-agus/"><u>Natalie Agus</u></a> for her passionate teaching, patience in answering questions and love that she gave all her students throughout this course
                 </p>
                 <p>
                     This game was a monumental group effort, and I believe that we well overdelivered on what was required for a school project.
                 </p>
                 <br/>
                 <p>
-                    I've always been a lover of story rich games, and this was the first time I had the opportunity of making such a game. In my personal opinion, this is my greatest work made out of university. Special thanks to <a href="aarynwebsite.com"><u>Aaryn Xie</u></a> for the beautiful hand-drawn art for the entire game, <a href="aarynwebsite.com"><u>Haresh Jayant </u></a> for the excellent coordination and creation of boss mechanics, <a href="aarynwebsite.com"><u>Jing Yee</u></a> for the amazing sound design, as well as <a href="aarynwebsite.com"><u>Cai Ying</u></a> and Kuang Yun for the enemies.
+                    I've always been a lover of story rich games, and this was the first time I had the opportunity of making such a game. In my personal opinion, this is my greatest work made out of university. 
+                    <br/>
+                    <br/>
+                    Special thanks to the following people:
+                    <br/>
+                    <br/>
+                    <ol>
+                    <li>
+                        <a href="https://ca.linkedin.com/in/aaryn-xie"><u>Aaryn Xie</u></a> for the beautiful hand-drawn art for the entire game
+                    </li>
+                    <li> 
+                        <a href="https://sg.linkedin.com/in/hareshj"><u>Haresh Jayant </u></a> for the excellent coordination and creation of boss mechanics
+                    </li>
+                    <li> 
+                        <a href="https://sg.linkedin.com/in/yapjingyee"><u>Jing Yee</u></a> for the incredible sound design
+                    </li>
+                    <li> 
+                        <a href="https://sg.linkedin.com/in/cai-ying-lim"><u>Cai Ying</u></a> and <a href="https://fr.linkedin.com/in/kuangyun-zhu/en"><u>Kuang Yun</u></a> for the enemies.
+                    </li>
+                    </ol>
  </p>
                 <br/>
+                <p>You can view the gameplay demo <a href="https://youtu.be/259tOFBKMgs"><u>here</u></a>.</p>
+                <br/>
+
             </div>
             <div id="project_carousel">
                 <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Gallery</p>
-            <GalleryCarousel picture_array={[]}/>
+            <GalleryCarousel picture_array={[uww1, uww2, uww3, uww4, uww5, uww6]}/>
             </div>
             <div id="project_reflect">
                 <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>

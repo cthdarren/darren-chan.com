@@ -11,10 +11,10 @@ function Home() {
             Currently, I am:
             <ol className="list-disc list-outside ml-5">
                 <li>
-                   Working on Until We Wake, a 2D Action Platformer Game written in Unity and C#.
+                   Working on Until We Wake, a 2D action platformer game written in Unity and C#.
                 </li>
                 <li>
-                    Exploring things to host on my home lab setup and server.
+                    Exploring k8s on my home lab.
                 </li>
             </ol>
         </div>

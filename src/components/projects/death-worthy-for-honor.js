@@ -1,15 +1,10 @@
 import GalleryCarousel from "../GalleryCarousel";
 
-// import deathhonor1 from "../../assets/pictures/deathhonor1.png"
-// import deathhonor2 from "../../assets/pictures/deathhonor2.png"
-// import deathhonor3 from "../../assets/pictures/deathhonor3.png"
-// import deathhonor4 from "../../assets/pictures/deathhonor4.png"
-// import deathhonor5 from "../../assets/pictures/deathhonor5.png"
-// import deathhonor6 from "../../assets/pictures/deathhonor6.png"
-// import deathhonor7 from "../../assets/pictures/deathhonor7.png"
-// import deathhonor8 from "../../assets/pictures/deathhonor8.png"
-// import deathhonor9 from "../../assets/pictures/deathhonor9.png"
-// import deathhonor10 from "../../assets/pictures/deathhonor10.png"
+import deathhonor1 from "../../assets/pictures/deathhonor1.png"
+import deathhonor2 from "../../assets/pictures/deathhonor2.png"
+import deathhonor3 from "../../assets/pictures/deathhonor3.png"
+import deathhonor4 from "../../assets/pictures/deathhonor4.png"
+import deathhonor5 from "../../assets/pictures/deathhonor5.png"
 
 function DeathWorthyForHonor() {
     return (
@@ -19,11 +14,13 @@ function DeathWorthyForHonor() {
                 <p>
                     A Death Worthy For Honor is a 2D rougelite action platformer about a samurai who goes by the name of Honor, whom is so strong that he constantly looks for a worthy opponent to finally best him. Collect shells to make Honor stronger by upgrading his stats in order to cause as much damage to Carnifex before the timer runs out to achieve a high score.
                 </p>
+                <br/>
+                <p>You can view the gameplay demo <a href="https://youtu.be/IH6_wPAlyqs"><u>here</u></a>.</p>
             </div>
             <div id="project_carousel">
                 <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
                 <p className="text-3xl mb-4">Gallery</p>
-            <GalleryCarousel picture_array={[]}/>
+            <GalleryCarousel picture_array={[deathhonor1, deathhonor2, deathhonor3, deathhonor4, deathhonor5]}/>
             </div>
             <div id="project_reflect">
                 <span className="bggradienthorizontal w-full h-[1px] my-5 block"></span>
