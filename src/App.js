@@ -10,7 +10,7 @@ function App() {
     const [currPage, setCurrPage] = useState(0);
     const [loading, setLoading] = useState(true);
     const [pageIndex, setPageIndex] = useState(0);
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark");
     const [timeoutId, setTimeoutId] = useState(null);
 
     const pages = ["Home", "Experience", "Projects", "Contact"];
@@ -36,9 +36,12 @@ function App() {
 
     function toggleTheme() {
         if (darkMode) {
-            document.getElementsByTagName("body")[0].classList.remove("dark");
+            document.documentElement.setAttribute("theme", "light");
+            localStorage.setItem("theme", "light");
         } else {
-            document.getElementsByTagName("body")[0].classList.add("dark");
+            // document.getElementsByTagName("body")[0].classList.add("dark");
+            document.documentElement.setAttribute("theme", "dark");
+            localStorage.setItem("theme", "dark");
         }
         setDarkMode(!darkMode);
     }

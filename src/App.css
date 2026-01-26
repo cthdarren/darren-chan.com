@@ -12,21 +12,19 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-body {
-  background-color: #fff;
-  color: #000;
+html {
   transition:
     background-color 0.7s,
     color 1.2s;
 }
 
-body.dark {
+html[theme="dark"]{
   background-color: #111;
   color: #fff;
 }
 
-body.dark #header > p,
-body.dark #footer > p {
+html[theme="dark"] #header > p,
+html[theme="dark"] #footer > p {
   border-color: #333;
 }
 
@@ -41,11 +39,11 @@ body.dark #footer > p {
   color: #bbb;
 }
 
-body.dark .biglink:hover {
+html[theme="dark"] .biglink:hover {
   color: #555;
 }
 
-body.dark .treenode {
+html[theme="dark"] .treenode {
   border-color: #333;
   background-color: #444;
 }
@@ -56,8 +54,8 @@ body.dark .treenode {
     background-color 1s;
 }
 
-body.dark .treenode > div,
-body.dark #navdivider {
+:root[theme="dark"] .treenode > div,
+:root[theme="dark"] #navdivider {
   border-color: #ccc;
   background-color: #ccc;
 }
@@ -115,7 +113,7 @@ body.dark #navdivider {
   animation-delay: 1.5s;
 }
 
-body.dark #topBorder {
+html[theme="dark"] #topBorder {
   border-top: 2px solid;
   position: absolute;
   top: 50%;
@@ -123,7 +121,7 @@ body.dark #topBorder {
   animation-delay: 1s;
 }
 
-body.dark #bottomBorder {
+html[theme="dark"] #bottomBorder {
   border-bottom: 2px solid;
   position: absolute;
   bottom: 50%;
@@ -147,7 +145,7 @@ body.dark #bottomBorder {
     animation: startupbtm 2s forwards;
     animation-delay: 1s;
   }
-  body.dark #topBorder {
+  html[theme="dark"] #topBorder {
     border-top: 2px solid;
     position: absolute;
     top: 50%;
@@ -155,7 +153,7 @@ body.dark #bottomBorder {
     animation-delay: 1s;
   }
 
-  body.dark #bottomBorder {
+  html[theme="dark"] #bottomBorder {
     border-bottom: 2px solid;
     position: absolute;
     bottom: 50%;
@@ -306,7 +304,7 @@ body.dark #bottomBorder {
     justify-content: flex-start !important;
 }
 
-body.dark .bordergradientvertical{
+html[theme="dark"] .bordergradientvertical{
     border-image: linear-gradient(to bottom, #111111 5%, #444 10% , #444 90% , #111111 95%) 1;
 }
 
@@ -314,7 +312,7 @@ body.dark .bordergradientvertical{
     border-image: linear-gradient(to bottom, #fff 5%, #ccc 10% , #ccc 90% , #fff 95%) 1;
 }
 
-body.dark .bggradienthorizontal{
+html[theme="dark"] .bggradienthorizontal{
     background-image: linear-gradient(to right, #111 0%, #444 10% , #444 90% , #111 100%);
 }
 
@@ -328,13 +326,14 @@ body.dark .bggradienthorizontal{
 
 @keyframes startuptop {
   0% {
-    width: 0%;
+    width: 2%;
     right: 50%;
     left: 50%;
     top: 50%;
+    border-color: #888
   }
   50% {
-    width: (100% - 8rem);
+    width: calc(100% - 8rem);
     left: 4rem;
     right: 4rem;
     top: 50%;
@@ -350,10 +349,11 @@ body.dark .bggradienthorizontal{
 
 @keyframes startupbtm {
   0% {
-    width: 0%;
+    width: 2%;
     right: 50%;
     left: 50%;
-    top: 50%;
+    bottom: 50%;
+    border-color: #888
   }
   50% {
     width: calc(100% - 8rem);
@@ -371,10 +371,11 @@ body.dark .bggradienthorizontal{
 }
 @keyframes startuptopdark {
   0% {
-    width: 0%;
+    width: 2%;
     right: 50%;
     left: 50%;
     top: 50%;
+    border-color: #888;
   }
   50% {
     width: calc(100% - 8rem);
@@ -396,7 +397,8 @@ body.dark .bggradienthorizontal{
     width: 2%;
     right: 50%;
     left: 50%;
-    top: 50%;
+    bottom: 50%;
+    border-color: #888;
   }
   50% {
     width: calc(100% - 8rem);
