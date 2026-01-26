@@ -110,7 +110,7 @@ function App() {
             >
                 <p className="border-t-2 md:pt-4 md:pb-2 pt-5 pb-3 md:text-sm text-xs flex flex-row">
                     <span>a minimalist, with a love for software</span>
-                    <span className="grow text-right ">© 2024 Darren Chan</span>
+                    <span className="grow text-right ">© 2026 Darren Chan</span>
                 </p>
             </div>
 
